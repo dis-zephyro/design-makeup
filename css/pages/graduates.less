@@ -1,12 +1,61 @@
-.selection-menu {
-	top: 50px;
-	width: 1024px;
-	padding: 30px;
-	margin-left: -400px;
-	border-color: #dbdbdb;
-}
 
 
 .graduates {
 	height: 400px;
+
+	.graduates-item {
+		width: 192px;
+		color: #4b4b4b;
+		display: block;
+		cursor: pointer;
+		font-size: 14px;
+		text-align: center;
+		text-decoration: none;
+		margin-bottom: 50px;
+	}
+
+	.graduates-item:hover {
+		color: #2383b3;
+		text-decoration: none;
+
+		span {
+			border-bottom: 1px solid #c6e1ef;
+		}
+
+		.graduates-image {
+			border-color: @color-blue;
+
+			.stars {
+				background-image: none;
+			}
+		}
+	}
+
+	.graduates-image {
+		overflow: hidden;
+		position: relative;
+		margin-bottom: 18px;
+		border: 1px solid #d8d8d8;
+		.border-radius(20px);
+
+		.stars {
+			margin: 0;
+			padding: 0;
+			right: 11px;
+			bottom: 11px;
+			z-index: 100;
+			overflow: hidden;
+			list-style: none;
+			position: absolute;
+			background: url("../img/sprites/pattern-stars.png");
+			.border-radius(10px);
+
+			li {
+				width: 20px;
+				height: 20px;
+				display: inline-block;
+				background: url("../img/sprites/star.png") center  1px no-repeat;
+			}
+		}
+	}
 }
