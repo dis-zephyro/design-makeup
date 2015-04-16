@@ -1,0 +1,131 @@
+.content-design {
+
+	.content-design-filter {
+		margin-bottom: 30px;
+		text-decoration: none;
+
+		.filter {
+			width: 480px;
+		}
+
+		.filter-bar {
+			height: 25px;
+			text-align: left;
+			margin-right: 96px;
+			position: relative;
+			border-bottom: 1px solid #cccccc;
+
+			.ui-slider-handle {
+				z-index: 2;
+				width: 10px;
+				height: 27px;
+				outline: none;
+				position: absolute;
+			}
+
+			.ui-slider-range {
+				border: 0;
+				z-index: 1;
+				height: 24px;
+				display: block;
+				position: absolute;
+				background: #e2f0f7;
+			}
+
+			.ui-slider-handle#first {
+				margin-left: -8px;
+				background: url("../img/sprites/slider-year.png") 0 0 no-repeat;
+			}
+
+			.ui-slider-handle#last {
+				background: url("../img/sprites/slider-year.png") -10px 0 no-repeat;
+			}
+		}
+
+		.filter-text {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			list-style: none;
+			display: table;
+
+			li {
+				font-size: 10px;
+				line-height: 20px;
+				display: table-cell;
+
+				.tags {
+					width: 100%;
+					height: 2px;
+					display: block;
+					border-left: 1px solid #4d4d4d;
+				}
+
+				.value {
+					display: block;
+					text-align: left;
+				}
+			}
+		}
+	}
+
+	.content-design-item {
+		color: #4b4b4b;
+		display: block;
+		cursor: pointer;
+		margin-bottom: 30px;
+
+		.content-design-image {
+			overflow: hidden;
+			margin-bottom: 10px;
+			border: 1px solid #cfcfcf;
+			.border-radius(6px);
+		}
+
+		.content-design-title {
+			font-size: 14px;
+			line-height: 24px;
+			display: inline;
+		}
+
+		.content-design-date {
+			opacity: 0;
+			color: #9a9a9a;
+			font-size: 12px;
+			line-height: 16px;
+			margin-left: 10px;
+		}
+	}
+
+	.content-design-item:hover {
+		color: #2383b3;
+		text-decoration: none;
+
+		.content-design-date {
+			opacity: 1;
+			background: #fff;
+		}
+
+		.content-design-title {
+			text-decoration: none;
+			border-bottom: 1px solid #c6e1ef;
+		}
+
+		.content-design-image {
+			border: 1px solid #2383b3;
+		}
+	}
+
+	.content-design-load {
+		width: 44px;
+		height: 33px;
+		cursor: pointer;
+		margin-bottom: 40px;
+		display: inline-block;
+		background: url("../img/sprites/icon-loading.png") 0 0 no-repeat;
+	}
+
+	.content-design-load:hover {
+		background: url("../img/sprites/icon-loading.png") 0 -33px no-repeat;
+	}
+}

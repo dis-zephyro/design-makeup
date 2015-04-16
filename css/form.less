@@ -1,0 +1,55 @@
+.form-control {
+	width: 100%;
+	display: block;
+	color: #808080;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #808080;
+	.box-shadow(none);
+
+}
+
+.form-control:focus {
+	color: @color-blue;
+	background-color: #fff;
+	border-color: @color-blue;
+}
+
+.form-control.active,
+.form-control:focus,
+.form-control.focus,
+.form-control:active,
+.form-control.active {
+	outline: none;
+	color: @color-blue;
+	background-color: #f0f0f0;
+	border-color: #b7b7b7;
+	.box-shadow(inset 0px 1px 1px 0px rgba(0, 0, 0, 0.4));
+}
+
+
+/* Buttons */
+
+.btn-main {
+	outline: none;
+	color: #808080;
+	background-color: #fff;
+	border-color: #808080;
+}
+
+.btn-main:hover {
+	color: @color-blue;
+	background-color: #fff;
+	border-color: @color-blue;
+}
+
+.btn-main.active,
+.btn-main:focus, .btn-main.focus,
+.btn-main:active, .btn-main.active,
+.open > .btn-main.dropdown-toggle {
+	outline: none;
+	color: @color-blue;
+	background-color: #f0f0f0;
+	border-color: #b7b7b7;
+	.box-shadow(inset 0px 1px 1px 0px rgba(0, 0, 0, 0.4));
+}
