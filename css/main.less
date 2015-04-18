@@ -22,20 +22,54 @@
 @import "pages/visualization.less";
 @import "pages/graduates.less";
 
+
+/* reset */
+
 * {
 	outline: none;
 }
 
 .wrapper {
-	min-width: 1200px;
+	min-width: 1300px;
 }
 
 .content {
 	margin-bottom: 20px;
+
+	blockquote {
+		font-weight: 300;
+		border-left: none;
+		line-height: 28px;
+		position: relative;
+		padding-left: 150px;
+		padding-right: 150px;
+		font-family: @font-roboto;
+	}
+
+	blockquote:after {
+		top: 50%;
+		left: 100px;
+		width: 25px;
+		height: 27px;
+		content: '';
+		position: absolute;
+		margin-top: -14px;
+		background: url("../img/sprites/blockquotes.png") 0 0 no-repeat;
+	}
+
+	blockquote:before {
+		top: 50%;
+		right: 100px;
+		width: 25px;
+		height: 27px;
+		content: '';
+		position: absolute;
+		margin-top: -14px;
+		background: url("../img/sprites/blockquotes.png") -25px 0 no-repeat;
+	}
 }
 
 .container {
-
 	width: 1280px;
 
 	@media (min-width: 320px) {
@@ -54,6 +88,54 @@
 		width: 1650px;
 	}
 
+}
+
+.page {
+
+	min-width: 1000px;
+
+	.container {
+		width: 960px;
+
+		@media (min-width: 320px) {
+			width: 960px;
+		}
+
+		@media (min-width: 1005px) {
+			width: 960px;
+		}
+
+		@media (min-width: 1280px) {
+			width: 960px;
+		}
+
+		@media (min-width: 1650px) {
+			width: 960px;
+		}
+	}
+
+	h2 {
+		font-size: 18px;
+		font-weight: 700;
+		margin-bottom: 20px;
+		font-family: @font-roboto;
+	}
+
+	.col-xs-9.offset {
+		padding-left: 50px;
+	}
+}
+
+.nav > li > a {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.content-header {
+
+	.nav {
+		left: 0;
+	}
 }
 
 .visual-content h1 {
@@ -181,6 +263,18 @@
 	background: url("../img/sprites/icon-loading.png") 0 -33px no-repeat;
 }
 
+.mb40 {
+	margin-bottom: 40px;
+}
 
-/* buttons */
+.pb65 {
+	padding-bottom: 65px;
+}
+
+
+/* Typography */
+
+a {
+	color: @color-blue;
+}
 
