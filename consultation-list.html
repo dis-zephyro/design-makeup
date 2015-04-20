@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Все консультации</title>
+	<!-- Bootstrap -->
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/main.less" rel="stylesheet/less">
+    <script src="js/less.min.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav visible-md-block visible-lg-block">
+                        <li>
+                            <a href="#">
+                                <span>Портфолио</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Услуги</span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-expanded="false">
+                                <span>Школа дизайна<i class="fa fa-angle-down"></i></span>
+                            </a>
+                            <div class="dropdown-menu dropnav" role="menu">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-8 left-col">
+                                            <div class="row">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="dropnav-title">
+                                                            <a href="#">О школе дизайна</a>
+                                                            <i class="icon-l"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="dropnav-title">
+                                                            <a href="#">Каталог курсов</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <ul class="drop-menu">
+                                                            <li><a href="#">Как это работает?</a></li>
+                                                            <li><a href="#">Расписание</a></li>
+                                                            <li><a href="#">Отзывы и результаты</a></li>
+                                                            <li><a href="#">Выпускники</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <ul class="drop-menu">
+                                                            <li><a href="#">Дизайн интреьеров</a></li>
+                                                            <li><a href="#">Коммерческая визуализация</a></li>
+                                                            <li><a href="#">Создание студии</a></li>
+                                                            <li><a href="#">Для прессы</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-md-offset-1">
+                                            <div class="drop-menu single">
+                                                <div class="dropnav-title">
+                                                    <a href="#">База знаний</a>
+                                                    <i class="icon-r"></i>
+                                                </div>
+                                                <ul class="drop-menu">
+                                                    <li><a href="#">Консультации</a></li>
+                                                    <li><a href="#">d-e-s-i-g-n.tv</a></li>
+                                                    <li><a href="#">На форум<i class="link"></i></a></li>
+                                                    <li><a href="#">Дизайн-конференция<i class="link"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-expanded="false">
+                                <span class="about">О компании<i class="fa fa-angle-down"></i></span>
+                            </a>
+                            <div class="dropdown-menu dropnav" role="menu">
+                                <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-8 left-col">
+                                                <div class="row">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="dropnav-title">
+                                                                <a href="#">Общая информация</a>
+                                                                <div class="dropnav-avatar">
+                                                                    <img src="img/sprites/popover-info.png">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4"></div>
+                                                        <div class="col-md-4"></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <ul class="drop-menu">
+                                                                <li><a href="#">О студии дизайна</a></li>
+                                                                <li><a href="#">О студии визуализации</a></li>
+                                                                <li><a href="#">Как мы работаем?</a></li>
+                                                                <li><a href="#">Медиа</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <ul class="drop-menu">
+                                                                <li><a href="#">Клиенты</a></li>
+                                                                <li><a href="#">Экскурсия по офисам</a></li>
+                                                                <li><a href="#">Юр. информация</a></li>
+                                                                <li><a href="#">Для прессы</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <ul class="drop-menu">
+                                                                <li><a href="#">Команда</a></li>
+                                                                <li><a href="#">Вакансии</a></li>
+                                                                <li><a href="#">Статистика</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-md-offset-1">
+                                                <div class="drop-menu single">
+                                                    <div class="dropnav-title">
+                                                        <a href="#">Станислав Орехов</a>
+                                                        <div class="dropnav-avatar">
+                                                            <img src="img/avatar-orekhov.png">
+                                                        </div>
+                                                    </div>
+                                                    <ul class="drop-menu">
+                                                        <li><a href="#">Фотографии</a></li>
+                                                        <li><a href="#">Интервью (видео)</a></li>
+                                                        <li><a href="#">Личная история</a></li>
+                                                        <li><a href="#">Путешествия</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Новости</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Контакты</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav hidden-md hidden-lg">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-expanded="false">
+                                <span>Меню<i class="fa fa-angle-down"></i></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="#">Портфолио</a>
+                                </li>
+                                <li>
+                                    <a href="#">Услуги</a>
+                                </li>
+                                <li>
+                                    <a href="#">Школа дизайна</a>
+                                </li>
+                                <li>
+                                    <a href="#">О компании</a>
+                                </li>
+                                <li>
+                                    <a href="#">Новости</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="navbar-right">
+                        <span class="phone">+7 495 647-85-90</span>
+                        <div id="sb-search" class="sb-search pull-left">
+                            <form class="navbar-form" role="search">
+                                <input class="sb-search-input" placeholder="Поиск" type="text" value="" name="search"
+                                       id="search">
+                                <input class="sb-search-submit" type="submit" value="">
+                                <span class="sb-icon-search"><i class="fa fa-search"></i></span>
+                            </form>
+                        </div>
+                        <a href="#" class="avatar">
+                            <img src="img/avatar.jpg" alt="avatar">
+                        </a>
+                    </div>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+    <div class="wrapper">
+        <div class="content-header">
+            <div class="grad-bg"></div>
+            <div class="pb65"></div>
+            <div class="container">
+                <h1>Консультации</h1>
+                <ul class="consultation-author-list clearfix">
+                    <li>
+                        <div class="user-avatar-mini">
+                            <div class="user-avatar-mini"><img class="img-responsive" src="img/avatar-orekhov.png" alt="Станислав Орехов"></div>
+                        </div>
+                        <a href="#" class="user-name" data-toggle="tooltip" data-placement="top" title data-original-title="дизайн интерьеров, визуализация,
+привлечение клиентов, личная эффективность">Станислав Орехов</a>
+                        <span class="user-staff">дизайн интерьеров, визуализация...</span>
+                    </li>
+                    <li>
+                        <div class="user-avatar-mini">
+                            <div class="user-avatar-mini"><img class="img-responsive" src="img/graduates/graduates-19.jpg" alt="Андрей Шапалов"></div>
+                        </div>
+                        <a href="#" class="user-name" data-toggle="tooltip" data-placement="bottom" title="Андрей Шапалов">Андрей Шапалов</a>
+                        <span class="user-staff">строительство, визуализация... </span>
+                    </li>
+                    <li>
+                        <div class="user-avatar-mini">
+                            <div class="user-avatar-mini"><img class="img-responsive" src="img/graduates/graduates-08.jpg" alt="Даша Шапалова"></div>
+                        </div>
+                        <a href="#" class="user-name" data-toggle="tooltip" data-placement="bottom" title="Даша Шапалова">Даша Шапалова</a>
+                        <span class="user-staff">дизайн интерьеров, визуализация, </span>
+                    </li>
+                    <li>
+                        <div class="user-avatar-mini">
+                            <div class="user-avatar-mini"><img class="img-responsive" src="img/graduates/graduates-27.jpg" alt="Олег Гафурбаев"></div>
+                        </div>
+                        <a href="#" class="user-name" data-toggle="tooltip" data-placement="bottom" title="Олег Гафурбаев">Олег Гафурбаев</a>
+                        <span class="user-staff">дизайн интерьеров, привлечение клиентов, </span>
+                    </li>
+                    <li>
+                        <div class="user-avatar-mini">
+                            <div class="user-avatar-mini"><img class="img-responsive" src="img/graduates/graduates-male.jpg" alt="Руслан Еремеев"></div>
+                        </div>
+                        <a href="#" class="user-name" data-toggle="tooltip" data-placement="bottom" title="Руслан Еремеев">Руслан Еремеев</a>
+                        <span class="user-staff">дизайн интерьеров, привлечение клиентов, </span>
+                    </li>
+                    <li>
+                        <div class="user-avatar-mini">
+                            <div class="user-avatar-mini"><img class="img-responsive" src="img/graduates/graduates-male.jpg" alt="Василий Степанов"></div>
+                        </div>
+                        <a href="#" class="user-name" data-toggle="tooltip" data-placement="bottom" title="Василий Степанов">Василий Степанов</a>
+                        <span class="user-staff">дизайн интерьеров, привлечение клиентов, </span>
+                    </li>
+                    <li>
+                        <div class="user-avatar-mini">
+                            <div class="user-avatar-mini"><img class="img-responsive" src="img/graduates/graduates-male.jpg" alt="Андрей Соболь"></div>
+                        </div>
+                        <a href="#" class="user-name" data-toggle="tooltip" data-placement="bottom" title="Андрей Шапалов">Андрей Шапалов</a>
+                        <span class="user-staff">дизайн интерьеров, привлечение клиентов, </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-design content">
+            <div class="container">
+                <div class="content-design-gallery consultation-list">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <a class="content-design-item" href="#">
+                                <div class="content-design-image">
+                                    <img class="img-responsive" src="img/tmp/img01.jpg" alt="">
+                                </div>
+                                <div class="content-design-title">
+                                    Учусь обрабатывать свои модели в фотошопе. Подскажите на что обратить внимание, какие ошибки исправить.
+                                </div>
+                                <span class="content-design-date">18 июня</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a class="content-design-item" href="#">
+                                <div class="content-design-image">
+                                    <img class="img-responsive" src="img/tmp/img02.jpg" alt="">
+                                </div>
+                                <div class="content-design-title">
+                                    Привет, отрисовывала машинки по техническим чертежам. Укажите косяки, на что обратить внимание?
+                                </div>
+                                <span class="content-design-date">18 июня</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a class="content-design-item" href="#">
+                                <div class="content-design-image">
+                                    <img class="img-responsive" src="img/tmp/img-empty.jpg" alt="">
+                                </div>
+                                <div class="content-design-title">
+                                    Здравствуйте! Оцените, пожалуйста, идеи для метро.
+                                </div>
+                                <span class="content-design-date">18 июня</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a class="content-design-item" href="#">
+                                <div class="content-design-image">
+                                    <img class="img-responsive" src="img/tmp/img03.jpg" alt="">
+                                </div>
+                                <div class="content-design-title">
+                                    Apple представила новый язык программирования. Как вам логотип?
+                                </div>
+                                <span class="content-design-date">18 июня</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <a class="content-design-item" href="#">
+                                <div class="content-design-image">
+                                    <img class="img-responsive" src="img/tmp/img04.jpg" alt="">
+                                </div>
+                                <div class="content-design-title">
+                                    Что вы об этом думаете?
+                                </div>
+                                <span class="content-design-date">18 июня</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a class="content-design-item" href="#">
+                                <div class="content-design-image">
+                                    <img class="img-responsive" src="img/tmp/img05.jpg" alt="">
+                                </div>
+                                <div class="content-design-title">
+                                    Компания Caviar выпустила iPhone 5s в золотом корпусе и с портретом Путина. Хотелось бы узнать вашу оценку.
+                                </div>
+                                <span class="content-design-date">18 июня</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a class="content-design-item" href="#">
+                                <div class="content-design-image">
+                                    <img class="img-responsive" src="img/tmp/img06.jpg" alt="">
+                                </div>
+                                <div class="content-design-title">
+                                    Во Владивостоке есть бар «Дружба» Скажите, что не так с буквой «б» и есть ли еще косяки?
+                                </div>
+                                <span class="content-design-date">18 июня</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a class="content-design-item" href="#">
+                                <div class="content-design-image">
+                                    <img class="img-responsive" src="img/tmp/img07.jpg" alt="">
+                                </div>
+                                <div class="content-design-title">
+                                    Доброго времени суток! На эту работу у меня ушло 8 часов понедельника. Зря потратил время или это интересно?
+                                </div>
+                                <span class="content-design-date">18 июня</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <a class="content-design-item" href="#">
+                                <div class="content-design-image">
+                                    <img class="img-responsive" src="img/tmp/img08.jpg" alt="">
+                                </div>
+                                <div class="content-design-title">
+                                    Что скажете про Мартина Де Паскаля? Жутко талантлив?
+                                </div>
+                                <span class="content-design-date">18 июня</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a class="content-design-item" href="#">
+                                <div class="content-design-image">
+                                    <img class="img-responsive" src="img/tmp/img-empty.jpg" alt="">
+                                </div>
+                                <div class="content-design-title">
+                                    В рамках общественного проекта «Последний адрес» такие знаки будут установлены на домах в память.
+                                </div>
+                                <span class="content-design-date">18 июня</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a class="content-design-item" href="#">
+                                <div class="content-design-image">
+                                    <img class="img-responsive" src="img/tmp/img09.jpg" alt="">
+                                </div>
+                                <div class="content-design-title">
+                                    Новый логотип Nescafé. Как Вам?
+                                </div>
+                                <span class="content-design-date">18 июня</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a class="content-design-item" href="#">
+                                <div class="content-design-image">
+                                    <img class="img-responsive" src="img/tmp/img10.jpg" alt="">
+                                </div>
+                                <div class="content-design-title">
+                                    Представлено схематичное изображения процесса подписания технологической документации.
+                                </div>
+                                <span class="content-design-date">18 июня</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <span class="content-load"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+		<div class="position">
+			<div class="left">
+				<div class="copyrigths clearfix">
+					<ul class="pull-left contacts">
+						<li>
+							<strong>Звоните:</strong>
+							<span> +7 495 648 85 90</span>
+						</li>
+						<li>
+							<strong>Пишите:</strong>
+							<a href="mailto:coaching@d-e-s-i-g-n.ru"> coaching@d-e-s-i-g-n.ru</a>
+						</li>
+						<li>
+							<a href="#" class="cr-link">© 2014 Студия Станислава Орехова</a>
+						</li>
+					</ul>
+					<ul class="pull-right advanced-links">
+						<li>
+							<a href="#">Карта сайта</a>
+						</li>
+						<li>
+							<a href="#" class="copy">© 2014 Студия Станислава Орехова</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="social-block clearfix">
+				<span class="descr pull-left">Подписывайтесь:</span>
+				<ul class="social">
+					<li>
+						<a href="#"><i class="fb">
+							<span>2000+</span>
+						</i></a>
+					</li>
+					<li>
+						<a href="#"><i class="vk">
+							<span>2000+</span>
+						</i></a>
+					</li>
+					<li>
+						<a href="#"><i class="tw">
+							<span>4000+</span>
+						</i></a>
+					</li>
+					<li>
+						<a href="#"><i class="yt">
+							<span>5000+</span>
+						</i></a>
+					</li>
+					<li>
+						<a href="#"><i class="inst">
+							<span>3000+</span>
+						</i></a>
+					</li>
+				</ul>
+				<a href="#" class="site-map">Карта сайта</a>
+			</div>
+			<div class="right">
+				<div class="copy-r">
+					<i class="ukr"></i>
+					<ul>
+						<li>
+							<span>Дизайн макетов <sup>2014</sup></span>
+						</li>
+						<li>
+							<a href="#">Студия Тараса Сэнькива</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-ui/jquery-ui.min.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/uisearch.js"></script>
+<script src="js/main.js"></script>
+<script>
+	new UISearch(document.getElementById('sb-search'));
+	$(window).load(function () {
+		$('.flexslider').flexslider({
+			controlNav: true,
+			animation: "slide",
+			controlNav: "thumbnails",
+			itemWidth: 960,
+			itemMargin: 0
+		});
+	});
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("div.ui-slider").find(".ui-slider-handle:first").attr("id","first")
+        $("div.ui-slider").find(".ui-slider-handle:last").attr("id","last")
+    })
+</script>
+
+
+</body>
+</html>
