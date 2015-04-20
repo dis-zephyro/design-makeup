@@ -27,3 +27,9 @@ $('.btn-hide').click(function() {
     }
 );
 
+$('.option-more').click(function() {
+        $('.option-more').hide();
+        $('.option').show();
+    }
+);
+
