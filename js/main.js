@@ -12,3 +12,18 @@ jQuery(".filter-bar").slider({
     step: 1
 });
 
+
+$('.btn-show').click(function() {
+        $('.comment-text').addClass("resize");
+        $('.btn-show').hide();
+        $('.btn-hide').show();
+    }
+);
+
+$('.btn-hide').click(function() {
+        $('.comment-text').removeClass("resize");
+        $('.btn-hide').hide();
+        $('.btn-show').show();
+    }
+);
+

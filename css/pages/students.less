@@ -213,17 +213,159 @@
 	}
 }
 
+.user-avatar {
+	width: 192px;
+	height: 192px;
+	overflow: hidden;
+	position: relative;
+	.border-radius(20px);
+}
+
+
+.page-column {
+	min-width: 1280px;
+
+	.container {
+		width: 1280px;
+
+		@media (min-width: 320px) {
+			width: 1280px;
+		}
+
+		@media (min-width: 1005px) {
+			width: 1280px;
+		}
+
+		@media (min-width: 1280px) {
+			width: 1280px;
+		}
+
+		@media (min-width: 1650px) {
+			width: 1280px;
+		}
+
+	}
+
+	.blue-block {
+		position: relative;
+		background: #f0f6fa;
+		color: #4b4b4b;
+		font-size: 14px;
+		font-style: italic;
+		line-height: 24px;
+		padding-top: 22px;
+		padding-bottom: 16px;
+		margin-bottom: 47px;
+
+		.blue-bg-block {
+			content: '';
+			position: absolute;
+			right: 0px;
+			top: 0px;
+			width: 9999px;
+			height: auto;
+			display: block;
+			background: #f0f6fa;
+		}
+	}
+
+	.like-block {
+		position: relative;
+
+		.enjoyed {
+			position: absolute;
+			top: 0px;
+			left: 9px;
+			font-style: normal;
+			width: 100px;
+		}
+
+		.btn-inner {
+			top: 10px;
+			left: 120px;
+			position: absolute;
+		}
+	}
+}
+
+.student-comment {
+	position: relative;
+
+	.comment-photo {
+		width: 80px;
+		height: 80px;
+		overflow: hidden;
+		background-color: #f9f6ec
+		border: solid 1px #e6e6e6;
+		.border-radius(40px);
+	}
+
+	.comment-text {
+		width: 728px;
+		height: 153px;
+		position: relative;
+		margin-bottom: 38px;
+		border: solid 1px #e6e6e6;
+		padding: 38px 45px 40px 50px;
+		.border-radius(5px);
+
+		p {
+			height: 100%;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			color: #4b4b4b;
+			font-size: 14px;
+			font-style: italic;
+			line-height: 24px;
+		}
+
+		.btn-show {
+			left: 50%;
+			width: 34px;
+			height: 10px;
+			cursor: pointer;
+			margin-left: -17px;
+			position: absolute;
+			background: url("../img/sprites-s03cff2c663.png") 0 -160px no-repeat;
+		}
+
+		.btn-hide {
+			left: 50%;
+			width: 34px;
+			height: 10px;
+			cursor: pointer;
+			display: none;
+			margin-left: -17px;
+			position: absolute;
+			background: url("../img/sprites-s03cff2c663.png") 0 -5931px no-repeat;
+		}
+	}
+
+	.comment-text:before {
+		top: 34px;
+		content: '';
+		left: -25px;
+		width: 25px;
+		height: 18px;
+		display: block;
+		position: absolute;
+		background: #fff url("../img/sprites-s03cff2c663.png") 0 -5263px no-repeat;
+	}
+
+	.comment-text:hover {
+		.box-shadow(0 6px 12px rgba(0,0,0,.175));
+	}
+
+	.comment-text.resize {
+		height: auto;
+		.box-shadow(0 6px 12px rgba(0,0,0,.175));
+	}
+}
+
+
 /* Side */
 
 .profile {
-
-	.user-avatar {
-		width: 192px;
-		height: 192px;
-		overflow: hidden;
-		position: relative;
-		.border-radius(20px);
-	}
 
 	.user-name {
 		margin: 20px 0 0 0;
@@ -279,8 +421,6 @@
 	}
 }
 
-
-
 .thumbnail-item  {
 	display: block;
 	color: #4b4b4b;
@@ -314,7 +454,6 @@
 	}
 }
 
-
 .content-interview {
 
 	.video-block {
@@ -330,9 +469,7 @@
 
 	.img-border {
 		margin-top: 30px;
-		overflow: hidden;
-		border: 1px solid #e5e5e5;
-		.border-radius(6px);
+
 
 		.img-left {
 			width: 50%;
@@ -473,4 +610,90 @@
 
 .icon-social.icon-in:hover {
 	background-position: -160px -32px;
+}
+
+
+
+.page-bottom {
+	width: 100%;
+	min-width: 1280px;
+	overflow: hidden;
+	margin-bottom: 95px;
+
+	.page-bottom-title {
+		color: #4b4b4b;
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 28px;
+		margin: 0 0 23px 0;
+		display: inline-block;
+		font-family: @font-roboto;
+	}
+
+	.page-bottom-title.interesting {
+		margin-left: 24px;
+	}
+
+	.thumbnails {
+		margin-left: -4px;
+		margin-right: -4px;
+		padding-right: 24px;
+
+		.tmb {
+			padding-left: 4px;
+			padding-right: 4px;
+		}
+
+		a {
+			display: block;
+			height: 144px;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			display: block;
+			background-color: #e6e6e6;
+			.border-radius(4px);
+		}
+	}
+
+	.links {
+		position: relative;
+		margin: 0 0 0 24px;
+		padding: 26px 0 23px 46px;
+
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+
+			li {
+				margin-bottom: 12px;
+			}
+		}
+
+		a {
+			color: @color-blue;
+			text-decoration: none;
+			border-bottom: 1px solid #bfdcea;
+		}
+
+		a:hover {
+			text-decoration: none;
+			border-color: transparent;
+		}
+	}
+
+	.bg_gray {
+		top: 50px;
+		left: 32px;
+		bottom: 0px;
+		width: 9999px;
+		content: '';
+		position: absolute;
+		background-color: #f0f6fa;
+		.border-radius(4px 0px 0px 4px;);
+		.box-shadow(inset 0 0 0 1px rgba(0, 0, 0, 0.04));
+	}
 }
