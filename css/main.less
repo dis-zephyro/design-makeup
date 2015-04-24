@@ -23,12 +23,18 @@
 @import "pages/visualization.less";
 @import "pages/students.less";
 @import "pages/consultation.less";
+@import "pages/portfolio.less";
 
 
 /* reset */
 
 * {
 	outline: none;
+}
+
+
+textarea {
+	resize: vertical;
 }
 
 .nav > li > a {
@@ -75,6 +81,55 @@
 		position: absolute;
 		margin-top: -14px;
 		background: url("../img/sprites/blockquotes.png") -25px 0 no-repeat;
+	}
+}
+
+.responsive {
+
+	.wrapper {
+		min-width: 320px;
+	}
+
+	.container {
+
+		@media (min-width: 320px) {
+			width: auto;
+
+		}
+
+		@media (min-width: 720px) {
+			width: 720px;
+		}
+
+
+		@media (min-width: 768px) {
+			width: 768px;
+		}
+
+		@media (min-width: 1005px) {
+			width: 1005px;
+		}
+
+		@media (min-width: 1024px) {
+			width: 1024px;
+		}
+
+		@media (min-width: 1280px) {
+			width: 1280px;
+		}
+
+		@media (min-width: 1376px) {
+			width: 1376px;
+		}
+
+		@media (min-width: 1440px) {
+			width: 1440px;
+		}
+
+		@media (min-width: 1650px) {
+			width: 1650px;
+		}
+
 	}
 }
 
@@ -249,12 +304,27 @@
 		text-decoration: none;
 		background: url("../img/sprites/go-back-hover.png") 0 -45px no-repeat;
 	}
+
+	.all-students {
+		height: 32px;
+		color: #818181;
+		line-height: 32px;
+		padding-left: 30px;
+		display: inline-block;
+		text-decoration: none;
+		background: url("../img/sprites/go-back-hover.png") 0 5px no-repeat;
+	}
+
+	.all-students:hover {
+		color: @color-blue;
+		background: url("../img/sprites/go-back-hover.png") 0 -45px no-repeat;
+	}
 }
 
 .visual-content h1 {
 	margin: 0;
 	position: relative;
-	padding: 50px 0 10px 0;
+	padding: 50px 0 20px 0;
 	font-family: @font-roboto;
 
 	.icon-design-tv {
@@ -333,7 +403,6 @@
 }
 
 .filter {
-	margin-bottom: 55px;
 
 	.selection {
 		display: inline-block;
@@ -381,6 +450,7 @@
 			> li > a {
 				color: #4c4c4c;
 				border-radius: 0;
+				text-decoration: none;
 				padding: 10px 0 10px 30px;
 			}
 
@@ -552,18 +622,6 @@
 						height: 48px;
 						display: block;
 						position: relative;
-
-						i {
-							right: 0;
-							bottom: 0;
-							width: 16px;
-							height: 16px;
-							position: absolute;
-						}
-
-						i.icon-fb {
-							background: url("../img/sprites/icon-social-mini.png") 0 0 no-repeat;
-						}
 					}
 				}
 
@@ -734,6 +792,21 @@
 			resize: vertical;
 		}
 	}
+}
+
+
+/* icons */
+
+.icon-social-mini {
+	right: 0;
+	bottom: 0;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+}
+
+.icon-social-mini.icon-fb {
+	background: url("../img/sprites/icon-social-mini.png") 0 0 no-repeat;
 }
 
 .content-load {

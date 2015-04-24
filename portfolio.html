@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Выпускники - список</title>
+	<title>design</title>
 	<!-- Bootstrap -->
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -18,7 +18,7 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>
-<body>
+<body class="responsive">
     <header>
         <nav class="navbar navbar-default">
             <div class="container-fluid">
@@ -230,141 +230,182 @@
             <!-- /.container-fluid -->
         </nav>
     </header>
-    <div class="page">
+    <div class="wrapper">
         <div class="content-header">
             <div class="grad-bg"></div>
             <div class="pb65"></div>
             <div class="container">
-                <div class="row">
-                    <div class="col-xs-3">
-                        <a href="#" class="all-students"><span>все выпускники</span></a>
-                    </div>
-                    <div class="col-xs-9 offset">
-                        <ul class="nav nav-pills">
-                            <li class="active"><a href="#mytab01"  data-toggle="tab">Результаты</a></li>
-                            <li><a href="#mytab02"  data-toggle="tab">О себе</a></li>
-                            <li><a href="#">Интерьвью</a></li>
-                            <li><a href="#mytab03"  data-toggle="tab">Блог</a></li>
-                        </ul>
+                <div class="visual-content">
+                    <div class="filter">
+                        <div class="filter-group">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-filter">
+                                    <input type="checkbox"><span class="icon-int"></span>Интерьеры
+                                </label>
+                                <label class="btn btn-filter">
+                                    <input type="checkbox"><span class="icon-ext"></span>Экстерьеры
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter-group">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-filter">
+                                    <input type="checkbox">Частные
+                                </label>
+                                <label class="btn btn-filter">
+                                    <input type="checkbox">Коммерческие
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter-group">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-filter">
+                                    <input type="checkbox">Классические
+                                </label>
+                                <label class="btn btn-filter">
+                                    <input type="checkbox">Современные
+                                </label>
+                                <label class="btn btn-filter">
+                                    <input type="checkbox">Ардеко
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter-group">
+                            <button type="button" class="btn btn-filter" data-toggle="button">все помещения</button>
+                        </div>
+                        <div class="last-filter-group">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    работы студентов
+                                </label>
+                            </div>
+                            <button type="button" class="btn btn-filter" data-toggle="button"><i class="fa fa-star"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="content">
             <div class="container">
-                <div class="row">
-                    <div class="col-xs-3">
-                        <div class="profile">
-                            <div class="user-avatar">
-                                <img class="img-responsive" src="img/graduates/graduates-02.jpg" alt="">
-                                <ul class="stars">
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </div>
-                            <div class="user-name">Татьяна Милошенко</div>
-                            <div class="user-staff">дизайнер, руководитель студии</div>
-                            <div class="social-block">
-                                <a class="icon-social icon-fb" href="#"></a>
-                                <a class="icon-social icon-vk" href="#"></a>
-                                <a class="icon-social icon-tv" href="#"></a>
-                                <a class="icon-social icon-youtube" href="#"></a>
-                                <a class="icon-social icon-in" href="#"></a>
-                            </div>
-                            <ul class="contact">
-                                <li class="tel">+8 9044 72 08 01</li>
-                                <li class="email"><a href="mailto:director@ds-house.ru"><span>director@ds-house.ru</span></a></li>
-                                <li class="skype">tatyanamila</li>
-                                <li class="www"><a href="www.ds-house.ru"><span>www.ds-house.ru</span></a></li>
-                                <li class="city">Сургут</li>
-                            </ul>
+                <div class="portfolio-gallery">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <a class="portfolio-item" href="#">
+                                <div class="portfolio-image">
+                                    <img class="img-responsive" src="img/tmp/im1.jpg" alt="">
+                                </div>
+                                <div class="portfolio-title"><span>Ванная в светлых тонах</span></div>
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <a class="portfolio-item" href="#">
+                                <div class="portfolio-image">
+                                    <img class="img-responsive" src="img/tmp/im2.jpg" alt="">
+                                    <span class="play"></span>
+                                </div>
+                                <div class="portfolio-title"><span>Гостиная — фото реалистичная подача</span></div>
+
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <a class="portfolio-item" href="#">
+                                <div class="portfolio-image">
+                                    <img class="img-responsive" src="img/tmp/im3.jpg" alt="">
+                                    <span class="play"></span>
+                                </div>
+                                <div class="portfolio-title"><span>Классический интерьер в Японии</span></div>
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <a class="portfolio-item" href="#">
+                                <div class="portfolio-image">
+                                    <img class="img-responsive" src="img/tmp/im4.jpg" alt="">
+                                    <span class="play"></span>
+                                </div>
+                                <div class="portfolio-title"><span>Гостиная-кухня и столовая в классике</span></div>
+
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <a class="portfolio-item" href="#">
+                                <div class="portfolio-image">
+                                    <img class="img-responsive" src="img/tmp/im5.jpg" alt="">
+                                    <span class="play"></span>
+                                </div>
+                                <div class="portfolio-title"><span>Гостиная в коттедже поселка Маленькая Италия</span></div>
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <a class="portfolio-item" href="#">
+                                <div class="portfolio-image">
+                                    <img class="img-responsive" src="img/tmp/im6.jpg" alt="">
+                                    <span class="play"></span>
+                                </div>
+                                <div class="portfolio-title"><span>Гостиная в классическом стиле в частном доме</span></div>
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <a class="portfolio-item" href="#">
+                                <div class="portfolio-image">
+                                    <img class="img-responsive" src="img/tmp/im7.jpg" alt="">
+                                    <span class="play"></span>
+                                </div>
+                                <div class="portfolio-title"><span>Классический интерьер в синих тонах</span></div>
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <a class="portfolio-item" href="#">
+                                <div class="portfolio-image">
+                                    <img class="img-responsive" src="img/tmp/im8.jpg" alt="">
+                                    <span class="play"></span>
+                                </div>
+                                <div class="portfolio-title"><span>Светлый классический интерьер</span></div>
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <a class="portfolio-item" href="#">
+                                <div class="portfolio-image">
+                                    <img class="img-responsive" src="img/tmp/im9.jpg" alt="">
+                                    <span class="play"></span>
+                                </div>
+                                <div class="portfolio-title"><span>Кухня в светлых тонах</span></div>
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <a class="portfolio-item" href="#">
+                                <div class="portfolio-image">
+                                    <img class="img-responsive" src="img/tmp/i10.jpg" alt="">
+                                    <span class="play"></span>
+                                </div>
+                                <div class="portfolio-title"><span>Гостиная-кухня и столовая в классике</span></div>
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <a class="portfolio-item" href="#">
+                                <div class="portfolio-image">
+                                    <img class="img-responsive" src="img/tmp/im11.jpg" alt="">
+                                </div>
+                                <div class="portfolio-title"><span>Классическая гостиная с перспективой</span></div>
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <a class="portfolio-item" href="#">
+                                <div class="portfolio-image">
+                                    <img class="img-responsive" src="img/tmp/im12.jpg" alt="">
+                                </div>
+                                <div class="portfolio-title"><span>Гостиная-кухня в легком классической стиле</span></div>
+                            </a>
                         </div>
                     </div>
-                    <div class="col-xs-9 offset">
-                        <div class="tab-content">
-                            <div class="tab-pane active"  id="mytab01">
-                                <div class="row">
-                                    <div class="col-xs-6">
-                                        <a class="thumbnail-item" href="#">
-                                            <div class="thumbnail">
-                                                <img src="img/graduates/profile-image-01.jpg" alt="#">
-                                            </div>
-                                            <div class="thumbnail-title"><span>Визуализация интерьеров</span></div>
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-6">
-                                        <a class="thumbnail-item" href="#">
-                                            <div class="thumbnail">
-                                                <img src="img/graduates/profile-image-02.jpg" alt="#">
-                                            </div>
-                                            <div class="thumbnail-title"><span>Копирайтинг в дизайне</span></div>
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-6">
-                                        <a class="thumbnail-item" href="#">
-                                            <div class="thumbnail">
-                                                <img src="img/graduates/profile-image-03.jpg" alt="#">
-                                            </div>
-                                            <div class="thumbnail-title"><span>Планировочные решения VIP</span></div>
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-6">
-                                        <a class="thumbnail-item" href="#">
-                                            <div class="thumbnail">
-                                                <img src="img/graduates/profile-image-04.jpg" alt="#">
-                                            </div>
-                                            <div class="thumbnail-title"><span>Планировочные решения</span></div>
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-6">
-                                        <a class="thumbnail-item" href="#">
-                                            <div class="thumbnail">
-                                                <img src="img/graduates/profile-image-05.jpg" alt="#">
-                                            </div>
-                                            <div class="thumbnail-title"><span>Соционика в дизайне</span></div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane"  id="mytab02">
-                                <div class="comments">
-                                    <p>Сейчас я закончила свое обучение в Италии, получив интернациональный опыт, о котором всегда мечтала, и мне предстоит стажировка. До отъезда  мне повезло поучаствовать в разработке и реализации двух проектов.</p>
-                                    <p>Все началось с того что как-то летом мне очень хотелось начать работать по профессии, я обрывала трубки в студии и знакомым архитекторам. Один архитектор посоветовал пройти курс у Станислава Орехова. Так я и сделала, и вскоре от того же архитектора поступило предложение участвовать в конкурсе на реконструкцию детского сада, который мы выиграли, во многом благодаря тому, что смогли быстро и достаточно качественно визуализировать свои идеи.</p>
-                                    <p>Мое первое образование  –  архитектурное,  я люблю проектировать дом, разрабатывать функциональную планировку,  наиболее соответствующую образу жизни семьи, продумывать, как естественный свет будет проникать в интерьеры, подбирать материалы…</p>
-                                    <p>Меня вдохновляют современные архитекторы: Peter Zumthor, Herzog&de Meuron, David Adjaye, Kengo Kuma…здорово читать про новые проекты в журналах, но больше всего я люблю смотреть на них «вживую», прочувствовать, как воспринимается интерьер на уровне эмоций и ощущений на собственном опыте. Недавно я ездила с друзьями в музей современного искусства, построенный Захой Хадид в Риме, снова убедилась, как захватывающе находиться в интерьере такого уровня.</p>
-                                    <p>Недавно я закончила магистратуру по дизайну интерьера в Милане. Этот год был так насыщен переменами, событиями и такими разными людьми со всего мира, что я многому научилась, расширила свой кругозор и представления о своих возможностях. Как будто увидела глазами своих новых друзей те страны, в которых никогда не была, те институты, в которых никогда не училась.</p>
-                                    <p>Преподавателями на нашем курсе были практикующие архитекторы, директора студий в Милане, а проекты мы делали для реальных клиентов, которые  приходили комментировать презентации, что сделало процесс обучения более интересным и приближенным к реальной жизни.</p>
-                                    <p>Во время учебы я нашла стажировку в архитектурной студии в Милане. Сейчас я думаю, что после смогу найти интересную работу и чувствую себя свободной путешествовать с этой целью, имея хороший запас иностранных языков и родной русский в своем арсенале. Я часто думаю о том, что мне очень многому нужно научиться,  но тем интереснее смотреть в будущее.</p>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="mytab03">
-                                <div class="blog-post">
-                                    <div class="blog-post-text">
-                                        <h2 class="blog-post-title">Реализовали новый проект!<span class="date">23 сентября 2013</span></h2>
-                                        <p>алеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу языкового океана. </p>
-                                    </div>
-                                    <img class="img-responsive" src="img/graduates/blog-post-image01.jpg" alt="">
-                                </div>
-                                <div class="blog-post">
-                                    <div class="blog-post-text">
-                                        <h2 class="blog-post-title">Реализовали новый проект!<span class="date">23 сентября 2013</span></h2>
-                                        <p>алеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу языкового океана. </p>
-                                    </div>
-                                </div>
-                                <div class="blog-post">
-                                    <div class="blog-post-text">
-                                        <h2 class="blog-post-title">Реализовали новый проект!<span class="date">23 сентября 2013</span></h2>
-                                        <p>алеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу языкового океана. </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="text-center">
+                        <span class="content-load"></span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <footer>
 		<div class="position">
 			<div class="left">

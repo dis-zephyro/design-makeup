@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Выпускники - список</title>
+	<title>Консультации</title>
 	<!-- Bootstrap -->
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -233,138 +233,129 @@
     <div class="page">
         <div class="content-header">
             <div class="grad-bg"></div>
-            <div class="pb65"></div>
             <div class="container">
-                <div class="row">
-                    <div class="col-xs-3">
-                        <a href="#" class="all-students"><span>все выпускники</span></a>
-                    </div>
-                    <div class="col-xs-9 offset">
-                        <ul class="nav nav-pills">
-                            <li class="active"><a href="#mytab01"  data-toggle="tab">Результаты</a></li>
-                            <li><a href="#mytab02"  data-toggle="tab">О себе</a></li>
-                            <li><a href="#">Интерьвью</a></li>
-                            <li><a href="#mytab03"  data-toggle="tab">Блог</a></li>
-                        </ul>
-                    </div>
-                </div>
+                <span class="date">24 октября 2013</span>
+                <h1>
+                    Задать вопрос
+                    <a href="#" class="go-back"></a>
+                </h1>
             </div>
         </div>
         <div class="content">
             <div class="container">
-                <div class="row">
-                    <div class="col-xs-3">
-                        <div class="profile">
-                            <div class="user-avatar">
-                                <img class="img-responsive" src="img/graduates/graduates-02.jpg" alt="">
-                                <ul class="stars">
-                                    <li></li>
-                                    <li></li>
-                                </ul>
+                <div class="question-form">
+                    <form>
+                        <div class="form-body">
+                            <div class="form-group form-border">
+                                <input type="text" class="form-hide" placeholder="Ваше имя, или ссылка на фейсбук">
                             </div>
-                            <div class="user-name">Татьяна Милошенко</div>
-                            <div class="user-staff">дизайнер, руководитель студии</div>
-                            <div class="social-block">
-                                <a class="icon-social icon-fb" href="#"></a>
-                                <a class="icon-social icon-vk" href="#"></a>
-                                <a class="icon-social icon-tv" href="#"></a>
-                                <a class="icon-social icon-youtube" href="#"></a>
-                                <a class="icon-social icon-in" href="#"></a>
+                            <div class="form-group form-border">
+                                <textarea class="form-hide item1" maxlength="120" placeholder="Ваш вопрос"></textarea>
+                                <div class="note">120 символов</div>
                             </div>
-                            <ul class="contact">
-                                <li class="tel">+8 9044 72 08 01</li>
-                                <li class="email"><a href="mailto:director@ds-house.ru"><span>director@ds-house.ru</span></a></li>
-                                <li class="skype">tatyanamila</li>
-                                <li class="www"><a href="www.ds-house.ru"><span>www.ds-house.ru</span></a></li>
-                                <li class="city">Сургут</li>
-                            </ul>
+                            <div class="form-group">
+                                <textarea class="form-hide item2" placeholder="Подробности"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label class="file_upload">
+                                    <span class="btn btn-upload">Добавить изображение</span>
+                                    <div class="choose clearfix">
+                                        <div class="choose-image">
+                                            <img class="img-responsive" src="img/tmp/upload-image.png" alt="">
+                                            <span>Сообщение загружено</span>
+                                        </div>
+                                    </div>
+                                    <input type="file">
+                                </label>
+                            </div>
                         </div>
+                        <div class="consultant">
+                            <div class="consultant-title">У кого хотите проконсультироваться?</div>
+                            <div class="btn-group clearfix" data-toggle="buttons">
+                                <label class="btn consultant-item">
+                                    <input type="radio" name="options" id="option1">
+                                    <div class="consultant-name">Станислав Орехов</div>
+                                    <div class="avatar">
+                                        <span>
+                                            <img class="img-responsive" src="img/avatar-orekhov.png" alt="Станислав Орехов">
+                                        </span>
+                                    </div>
+                                    <span>дизайн интерьеров, визуализация, привлечение клиентов, личная эффективность</span>
+                                </label>
+                                <label class="btn consultant-item">
+                                    <input type="radio" name="options" id="option2">
+                                    <div class="consultant-name">Андрей Шапалов</div>
+                                    <div class="avatar">
+                                        <span>
+                                                <img class="img-responsive" src="img/graduates/graduates-19.jpg" alt="Андрей Шапалов">
+                                        </span>
+                                    </div>
+                                    <span>строительство, визуализация, привлечение клиентов, </span>
+                                </label>
+
+                                <label class="btn consultant-item">
+                                    <input type="radio" name="options" id="option3">
+                                    <div class="consultant-name">Даша Шапалова</div>
+                                    <div class="avatar">
+                                        <span>
+                                            <img class="img-responsive" src="img/graduates/graduates-12.jpg" alt="Даша Шапалова">
+                                        </span>
+                                    </div>
+                                    <span>дизайн интерьеров, визуализация,</span>
+                                </label>
+
+                                <label class="btn consultant-item">
+                                    <input type="radio" name="options" id="option4">
+                                    <div class="consultant-name">Олег Гафурбаев</div>
+                                    <div class="avatar">
+                                        <span>
+                                            <img class="img-responsive" src="img/graduates/graduates-20.jpg" alt="Олег Гафурбаев">
+                                        </span>
+                                    </div>
+                                    <span>дизайн интерьеров, визуализация, привлечение клиентов, личная эффективность</span>
+                                </label>
+
+                                <label class="btn consultant-item">
+                                    <input type="radio" name="options" id="option6">
+                                    <div class="consultant-name">Руслан Еремеев</div>
+                                    <div class="avatar">
+                                        <span>
+                                            <img class="img-responsive" src="img/graduates/graduates-male.jpg" alt="Руслан Еремеев">
+                                            <i class="icon-social-mini icon-fb"></i>
+                                        </span>
+                                    </div>
+                                    <span>дизайн интерьеров,  привлечение клиентов,</span>
+                                </label>
+
+                                <label class="btn consultant-item">
+                                    <input type="radio" name="options" id="option7">
+                                    <div class="consultant-name">Василий Степанов</div>
+                                    <div class="avatar">
+                                        <span>
+                                            <img class="img-responsive" src="img/graduates/graduates-male.jpg" alt="Василий Степанов">
+                                        </span>
+                                    </div>
+                                    <span>визуализация, привлечение клиентов</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="submit-block">
+                            <button type="submit" class="btn btn-green invert">Отправить вопрос</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="row two-column">
+                    <div class="col-xs-6">
+                        <p>В разделе «консультации» мы даем советы как улучшить дизайн интерьеров, визуализацию, отвечаем на вопросы связанные с авторским надзором и строительством. Цель — помочь людям решить сложные ситуации.</p>
                     </div>
-                    <div class="col-xs-9 offset">
-                        <div class="tab-content">
-                            <div class="tab-pane active"  id="mytab01">
-                                <div class="row">
-                                    <div class="col-xs-6">
-                                        <a class="thumbnail-item" href="#">
-                                            <div class="thumbnail">
-                                                <img src="img/graduates/profile-image-01.jpg" alt="#">
-                                            </div>
-                                            <div class="thumbnail-title"><span>Визуализация интерьеров</span></div>
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-6">
-                                        <a class="thumbnail-item" href="#">
-                                            <div class="thumbnail">
-                                                <img src="img/graduates/profile-image-02.jpg" alt="#">
-                                            </div>
-                                            <div class="thumbnail-title"><span>Копирайтинг в дизайне</span></div>
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-6">
-                                        <a class="thumbnail-item" href="#">
-                                            <div class="thumbnail">
-                                                <img src="img/graduates/profile-image-03.jpg" alt="#">
-                                            </div>
-                                            <div class="thumbnail-title"><span>Планировочные решения VIP</span></div>
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-6">
-                                        <a class="thumbnail-item" href="#">
-                                            <div class="thumbnail">
-                                                <img src="img/graduates/profile-image-04.jpg" alt="#">
-                                            </div>
-                                            <div class="thumbnail-title"><span>Планировочные решения</span></div>
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-6">
-                                        <a class="thumbnail-item" href="#">
-                                            <div class="thumbnail">
-                                                <img src="img/graduates/profile-image-05.jpg" alt="#">
-                                            </div>
-                                            <div class="thumbnail-title"><span>Соционика в дизайне</span></div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane"  id="mytab02">
-                                <div class="comments">
-                                    <p>Сейчас я закончила свое обучение в Италии, получив интернациональный опыт, о котором всегда мечтала, и мне предстоит стажировка. До отъезда  мне повезло поучаствовать в разработке и реализации двух проектов.</p>
-                                    <p>Все началось с того что как-то летом мне очень хотелось начать работать по профессии, я обрывала трубки в студии и знакомым архитекторам. Один архитектор посоветовал пройти курс у Станислава Орехова. Так я и сделала, и вскоре от того же архитектора поступило предложение участвовать в конкурсе на реконструкцию детского сада, который мы выиграли, во многом благодаря тому, что смогли быстро и достаточно качественно визуализировать свои идеи.</p>
-                                    <p>Мое первое образование  –  архитектурное,  я люблю проектировать дом, разрабатывать функциональную планировку,  наиболее соответствующую образу жизни семьи, продумывать, как естественный свет будет проникать в интерьеры, подбирать материалы…</p>
-                                    <p>Меня вдохновляют современные архитекторы: Peter Zumthor, Herzog&de Meuron, David Adjaye, Kengo Kuma…здорово читать про новые проекты в журналах, но больше всего я люблю смотреть на них «вживую», прочувствовать, как воспринимается интерьер на уровне эмоций и ощущений на собственном опыте. Недавно я ездила с друзьями в музей современного искусства, построенный Захой Хадид в Риме, снова убедилась, как захватывающе находиться в интерьере такого уровня.</p>
-                                    <p>Недавно я закончила магистратуру по дизайну интерьера в Милане. Этот год был так насыщен переменами, событиями и такими разными людьми со всего мира, что я многому научилась, расширила свой кругозор и представления о своих возможностях. Как будто увидела глазами своих новых друзей те страны, в которых никогда не была, те институты, в которых никогда не училась.</p>
-                                    <p>Преподавателями на нашем курсе были практикующие архитекторы, директора студий в Милане, а проекты мы делали для реальных клиентов, которые  приходили комментировать презентации, что сделало процесс обучения более интересным и приближенным к реальной жизни.</p>
-                                    <p>Во время учебы я нашла стажировку в архитектурной студии в Милане. Сейчас я думаю, что после смогу найти интересную работу и чувствую себя свободной путешествовать с этой целью, имея хороший запас иностранных языков и родной русский в своем арсенале. Я часто думаю о том, что мне очень многому нужно научиться,  но тем интереснее смотреть в будущее.</p>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="mytab03">
-                                <div class="blog-post">
-                                    <div class="blog-post-text">
-                                        <h2 class="blog-post-title">Реализовали новый проект!<span class="date">23 сентября 2013</span></h2>
-                                        <p>алеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу языкового океана. </p>
-                                    </div>
-                                    <img class="img-responsive" src="img/graduates/blog-post-image01.jpg" alt="">
-                                </div>
-                                <div class="blog-post">
-                                    <div class="blog-post-text">
-                                        <h2 class="blog-post-title">Реализовали новый проект!<span class="date">23 сентября 2013</span></h2>
-                                        <p>алеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу языкового океана. </p>
-                                    </div>
-                                </div>
-                                <div class="blog-post">
-                                    <div class="blog-post-text">
-                                        <h2 class="blog-post-title">Реализовали новый проект!<span class="date">23 сентября 2013</span></h2>
-                                        <p>алеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу языкового океана. </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-xs-6">
+                        <p>Чем точнее вы сформулируете вопрос, тем полезне будет ответ. Впрос «как сделать этот стык» намного лучше чем «как вам дизайн?» Мы не даем никаких гарантий, что ваш вопрос будет опубликован.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <footer>
 		<div class="position">
 			<div class="left">
@@ -448,26 +439,17 @@
 <script src="js/classie.js"></script>
 <script src="js/uisearch.js"></script>
 <script src="js/main.js"></script>
-<script>
-	new UISearch(document.getElementById('sb-search'));
-	$(window).load(function () {
-		$('.flexslider').flexslider({
-			controlNav: true,
-			animation: "slide",
-			controlNav: "thumbnails",
-			itemWidth: 960,
-			itemMargin: 0
-		});
-	});
-</script>
 
-<script type="text/javascript">
-    $(document).ready(function(){
-        $("div.ui-slider").find(".ui-slider-handle:first").attr("id","first")
-        $("div.ui-slider").find(".ui-slider-handle:last").attr("id","last")
-    })
-</script>
-
+    <script>
+        new UISearch(document.getElementById('sb-search'));
+        function setEqualHeight() {
+            var blockheight = $("div.blue-block").outerHeight();
+            $(".blue-bg-block").height(blockheight);
+        }
+        $(document).ready(function () {
+            setEqualHeight($(".blue-block > .blue-bg-block"));
+        });
+    </script>
 
 </body>
 </html>

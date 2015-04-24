@@ -35,3 +35,154 @@
 		}
 	}
 }
+
+.question-form {
+	overflow: hidden;
+	padding-top: 48px;
+	background: #faf6ed;
+	margin: 0 8px 40px 8px;
+	border: 1px solid #e1ddd5;
+	.border-radius(6px);
+
+	.form-body {
+		float: left;
+		width: 370px;
+		background: #fff;
+		margin-left: 40px;
+		padding-bottom: 15px;
+		border: 1px solid #dedad2;
+		.box-shadow(inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2));
+		.border-radius(6px);
+
+		.note {
+			color: #cccccc;
+			font-size: 12px;
+			text-align: right;
+			font-style: italic;
+			margin-bottom: 4px;
+		}
+
+		.form-hide {
+			width: 100%;
+			border: none;
+			color: #808080;
+			display: block;
+			background: transparent url("../img/sprites/empty.png");
+			padding: 10px 0;
+
+		}
+
+		textarea {
+			resize: none;
+		}
+
+		.form-hide.item1 {
+			height: 96px;
+		}
+
+		.form-hide.item2 {
+			height: 130px;
+			margin-bottom: 10px;
+		}
+
+		.form-group {
+			padding: 0 15px;
+			margin-bottom: 0;
+		}
+		.form-group.form-border {
+			border-bottom: 1px solid #e6e6e6;
+		}
+
+		.btn-image {
+
+		}
+	}
+
+	.consultant {
+		float: right;
+		width: 440px;
+		margin-right: 40px;
+
+		.consultant-title {
+			color: #4d4d4d;
+			margin-bottom: 25px;
+		}
+
+		.btn-group {
+			display: block;
+		}
+
+		.consultant-item {
+			float: left;
+			width: 50%;
+			border: none;
+			height: 110px;
+			display: block;
+			text-align: left;
+			padding: 0 5px 0 60px;
+			white-space: normal;
+			margin-bottom: 10px;
+			.border-radius(0);
+
+			.consultant-name {
+				color: #4b4b4b;
+			}
+
+			span {
+				color: #9a9a9a;
+				font-size: 12px;
+			}
+
+			.avatar {
+				top: 0;
+				left: 0;
+				width: 48px;
+				height: 48px;
+				position: absolute;
+
+				span {
+					width: 48px;
+					height: 48px;
+					display: block;
+					position: relative;
+				}
+
+				img {
+					display: block;
+					border: 1px solid #dedad2;
+					.border-radius(24px);
+
+				}
+			}
+		}
+
+		.consultant-item.active,
+		.consultant-item:active {
+			.box-shadow(none);
+
+			.consultant-name {
+				color: #f3594f;
+			}
+
+			.avatar {
+
+				img {
+					border-color: #f3594f;
+				}
+			}
+		}
+	}
+
+	.submit-block {
+		height: 96px;
+		margin-top: 10px;
+		padding: 28px 48px;
+		background: #f0ebdf;
+	}
+}
+
+.two-column {
+	.col-xs-6 {
+		padding: 0 50px;
+	}
+}
