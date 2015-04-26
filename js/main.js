@@ -33,3 +33,22 @@ $('.option-more').click(function() {
     }
 );
 
+
+// Мобильное меню.
+
+$(function() {
+    var pull = $('#pull');
+    menu = $('.filter-wrap');
+
+    $(pull).on('click', function(e) {
+        e.preventDefault();
+        menu.slideToggle('fast');
+    });
+
+    $(window).resize(function(){
+        var w = $(window).width();
+        if(w > 1440 && menu.is(':hidden')) {
+            menu.removeAttr('10000');
+        }
+    });
+});

@@ -1,16 +1,122 @@
-.filter-group {
-	display: inline-block;
-	margin-right: 5px;
-}
+.filter {
 
-.last-filter-group {
-	float: right;
-
-	.checkbox {
+	.filter-group {
+		margin-right: 5px;
 		display: inline-block;
+
+		.star {
+			display: inline-block;
+
+			@media (min-width: 500px) {
+				display: none;
+			}
+		}
+
+	}
+
+
+
+	.last-filter-group {
+		float: right;
 		margin-right: 10px;
+
+		.checkbox {
+			display: none;
+			margin-right: 10px;
+
+			@media (min-width: 720px) {
+				width: 720px;
+				display: inline;
+			}
+		}
+	}
+
+	.star {
+		display: none;
+
+		@media (min-width: 500px) {
+			display: inline-block;
+		}
+	}
+
+	.filter-collapse {
+		margin-right: 5px;
+		position: relative;
+		z-index: 100;
+		display: inline-block;
+
+		#pull {
+			display: none;
+		}
+
+		.filter-wrap {
+			z-index: 100;
+		}
+
+		@media (max-width: 1440px) {
+
+			#pull {
+				display: inline-block;
+			}
+
+			.filter-wrap {
+				display: none;
+				top: 53px;
+				right: -50px;
+				width: 380px;
+				text-align: center;
+				position: absolute;
+				padding: 24px 15px;
+				background: #fff;
+				border: 1px solid rgba(0, 0, 0, 0.15);
+				.border-radius(5px);
+				.box-shadow(0 6px 12px rgba(0, 0, 0, 0.175));
+
+				.btn-filter {
+					margin-bottom: 20px;
+				}
+			}
+
+			.filter-wrap:after {
+				content: '';
+				display: inline-block;
+				position: absolute;
+				z-index: 1070;
+				right: 60px;
+				top: -12px;
+				width: 22px;
+				height: 15px;
+				border-left: none;
+				border-right: none;
+				border-bottom: none;
+				background: url("../img/sprites/dropnav-arrow.png") 0 0 no-repeat;
+			}
+		}
+
+		@media (max-width: 500px) {
+			float: right;
+
+			.filter-wrap {
+				width: 300px;
+				right: 0;
+
+				.btn-filter {
+					font-size: 11px;
+					padding-left: 10px;
+					padding-right: 10px;
+				}
+			}
+
+			.filter-wrap:after {
+				right: 10px;
+			}
+		}
 	}
 }
+
+
+
+
 
 
 .portfolio-gallery {
@@ -73,3 +179,8 @@
 		}
 	}
 }
+
+
+
+
+
