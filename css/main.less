@@ -47,9 +47,7 @@ textarea {
 }
 
 .content {
-	margin-bottom: 20px;
-
-
+	margin-bottom: 0;
 
 	blockquote {
 		font-weight: 300;
@@ -866,6 +864,97 @@ textarea {
 	}
 }
 
+.white-block {
+	width: 944px;
+
+	position: relative;
+	margin: 30px auto 0 auto;
+	background: #fff;
+	padding: 50px 100px 40px 100px;
+	border: 1px solid #e6e6e6;
+	.border-radius(5px);
+
+	h4 {
+		font-weight: 700;
+	}
+
+	.text-box {
+		margin-bottom: 40px;
+	}
+}
+
+.light-yellow-block {
+	width: 944px;
+	z-index: 50;
+	position: relative;
+	border: 1px solid #e1ddd5;
+	margin: -10px auto 0 auto;
+	padding: 60px 100px 60px 230px;
+	background: #faf6ed url("../img/sprites/icon-tel.png") 95px 50% no-repeat;
+	.border-radius(0 0 5px 5px);
+}
+
+.work-schema {
+	padding: 160px 0px 48px 96px;
+	background: #fff url("../img/work-schema.png") 100px 48px no-repeat;
+	border: 1px solid #e6e6e6;
+	.border-radius(5px);
+
+	h4 {
+		font-size: 14px;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+
+	p {
+		color: #9a9a9a;
+		font-size: 12px;
+	}
+
+	.col-xs-3 {
+		padding-right: 50px;
+	}
+}
+
+.light-blue-block {
+	background: #e1ecf0;
+	padding: 40px 0 70px 0;
+}
+
+.notably {
+	display: table;
+}
+
+.notably {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: table-row;
+
+	li {
+		display: table-cell;
+		background: #fff;
+		padding: 45px 40px;
+		margin: 5px;
+		.border-radius(14px);
+		.box-shadow(inset 0 0 0 1px rgba(0, 0, 0, 0.1));
+		width: 33%;
+		font-size: 14px;
+		line-height: 24px;
+		border: 9px solid #f5f5f5;
+	}
+
+	h4 {
+		font-size: 18px;
+		font-weight: 700;
+		margin-bottom: 15px;
+	}
+}
+
+.divider100 {
+	width: 100%;
+	height: 100px;
+}
 
 /* icons */
 
@@ -920,3 +1009,20 @@ a {
 	color: @color-blue;
 }
 
+h2 {
+	margin-bottom: 20px;
+}
+
+
+h2.double-title {
+	font-size: 28px;
+	text-align: center;
+	font-weight: 700;
+
+	span {
+		display: block;
+		margin-top: 5px;
+		font-size: 18px;
+		font-weight: 300;
+	}
+}
