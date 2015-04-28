@@ -34,6 +34,14 @@ $('.option-more').click(function() {
 );
 
 
+$("#scale1").slider({
+    value:1000,
+    min: 1000,
+    max: 10000,
+    step: 1
+});
+
+
 // Мобильное меню.
 
 $(function() {
