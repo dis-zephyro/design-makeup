@@ -24,7 +24,7 @@
 @import "pages/students.less";
 @import "pages/consultation.less";
 @import "pages/portfolio.less";
-
+@import "pages/architectural-design.less";
 
 /* reset */
 
@@ -1137,6 +1137,57 @@ textarea {
 	}
 }
 
+.slider {
+	margin-bottom: 70px;
+
+	.slide {
+		overflow: hidden;
+		float: left;
+		margin: 0 16px;
+		width: 736px;
+		height: 540px;
+
+		img {
+			width: 100%;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			border-radius: 5px;
+			background-color: #e6e6e6;
+		}
+
+		a {
+			color: #999;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 32px;
+		}
+	}
+
+	.mCSB_horizontal.mCSB_inside > .mCSB_container {
+		margin-bottom: 10px;
+	}
+
+	.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+		width: 736px;
+
+		margin-left: auto;
+		margin-right: auto;
+		color: #fff;
+		background: transparent url("../img/slider-line.png") center no-repeat;
+	}
+
+	.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger {
+		top: -4px;
+
+		.mCSB_dragger_bar {
+			width: 50px !important;
+			height: 8px !important;
+			background: #cccccc;
+			.border-radius(8px)
+		}
+	}
+}
+
 .notably {
 	display: table;
 }
@@ -1227,7 +1278,7 @@ a {
 }
 
 h2 {
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
 
 

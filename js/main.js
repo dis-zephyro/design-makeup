@@ -60,3 +60,12 @@ $(function() {
         }
     });
 });
+
+
+$(".slider").mCustomScrollbar({
+    axis:"x",
+    theme:"dark-thin",
+    mouseWheel: false,
+    autoExpandScrollbar:true,
+    advanced:{autoExpandHorizontalScroll:true}
+});
