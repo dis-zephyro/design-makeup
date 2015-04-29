@@ -246,6 +246,145 @@
 		}
 	}
 
-	.custom-price {}
+	.custom-price {
+		width: 752px;
+		overflow: hidden;
+		.border-radius(6px);
+		margin: 0 auto;
+		border: 1px solid #a7cde1;
+
+		.nav-custom-price {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			border-bottom: 1px solid #a7cde1;
+
+			li {
+				float: left;
+				width: 250px;
+				height: 102px;
+				font-weight: 300;
+				font-size: 16px;
+				text-align: center;
+				position: relative;
+				font-family: @font-roboto;
+				border-right: 1px solid #a7cde1;
+
+				&:last-child {
+					border-bottom: none;
+				}
+
+				&.item1 {
+					background: #f2f8fc url("../img/sprites/icon-custom-price1.png") center 18px no-repeat;
+				}
+				&.item1.active {
+					background: #fff url("../img/sprites/icon-custom-price1-active.png") center 18px no-repeat;
+				}
+
+				&.item2 {
+					background: #f2f8fc url("../img/sprites/icon-custom-price2.png") center 16px no-repeat;
+				}
+				&.item2.active {
+					background: #fff url("../img/sprites/icon-custom-price2-hover.png") center 16px no-repeat;
+				}
+
+				&.item3 {
+					background: #f2f8fc url("../img/sprites/icon-custom-price3.png") center 18px no-repeat;
+				}
+				&.item3.active {
+					background: #fff url("../img/sprites/icon-custom-price3-hover.png") center 18px no-repeat;
+				}
+
+				&.active:before {
+					content: '';
+					display: block;
+					position: absolute;
+					z-index: 1010;
+					left: 50%;
+					margin-left: -14px;
+					bottom: -12px;
+					width: 28px;
+					height: 12px;
+					border-left: none;
+					border-right: none;
+					border-bottom: none;
+					background: url("../img/sprites/price-nav.png") 0 0 no-repeat;
+				}
+
+				a {
+					width: 100%;
+					height: 100%;
+					color: #999999;
+					padding-top: 70px;
+					text-decoration: none;
+					display: inline-block;
+				}
+			}
+		}
+
+		.custom-price-tab {
+			height: 390px;
+			background: #fff;
+			padding-top: 70px;
+			padding-bottom: 60px;
+			text-align: center;
+
+			.price-round {
+				width: 176px;
+				height: 176px;
+				color: #2383b3;
+							font-weight: 300;
+				text-align: center;
+				margin: 0 auto 35px auto;
+				font-family: @font-roboto;
+				background: url("../img/sprites/price-round.png") 0 0 no-repeat;
+
+				.price-round-item {
+					font-size: 72px;
+					padding-top: 35px;
+					line-height: 80px;
+					display: block;
+
+					sup {
+						display: inline-block;
+						font-size: 24px;
+						position: relative;
+						top: -30px;
+					}
+				}
+
+				.price-round-legend {
+					display: block;
+					color: #4b4b4b;
+					font-size: 18px;
+				}
+			}
+		}
+
+		.choose {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+
+			li {
+				text-align: left;
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.custom-price-bottom {
+		width: 756px;
+		height: 309px;
+		line-height: 1.7;
+		text-align: center;
+		padding: 80px 50px 0 50px;
+		margin: 0 auto 60px auto;
+		background: url("../img/sprites/custop-price-bottom.png") 0 0 no-repeat;
+
+		h2 {
+			color: #4c4c4c;
+		}
+	}
 
 }
