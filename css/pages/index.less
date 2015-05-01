@@ -424,11 +424,31 @@
 	.announce {
 		margin-bottom: 50px;
 
-		h2 {
+		.col-xs-4 {
+			position: relative;
+		}
+
+		h4 {
+			margin-left: 10px;
+			margin-bottom: 25px;
+
 			a {
 				color: #4b4b4b;
 				text-decoration: underline;
 			}
+
+			&.margin {
+				margin-left: 80px;
+			}
+		}
+
+		.gradient {
+			left: 0;
+			bottom: 0;
+			width: 400px;
+			height: 60px;
+			position: absolute;
+			background: url("../img/sprites/gradient.png") bottom left no-repeat;
 		}
 
 		.news-list {
@@ -467,6 +487,15 @@
 						padding-top: 5px;
 						background: url("../img/sprites/news-date-first.png") 0 0 no-repeat;
 					}
+
+					.video {
+						top: 8px;
+						left: -35px;
+						width: 20px;
+						height: 15px;
+						position: absolute;
+						background: url("../img/sprites/play.png") 0 0 no-repeat;
+					}
 				}
 
 				a {
@@ -477,13 +506,12 @@
 				}
 			}
 
-			.gradient {
-				left: 0;
-				bottom: 0;
-				width: 100%;
-				height: 95px;
-				position: absolute;
-				background: url("../img/sprites/gradient.png") bottom left no-repeat;
+			&.knowledge {
+
+				ul {
+					background: none;
+					padding-left: 50px;
+				}
 			}
 		}
 
@@ -501,5 +529,34 @@
 			background: #aad2e6;
 			.border-radius(4px);
 		}
+
+		.consultation {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+
+			li {
+				width: 50%;
+				float: left;
+				padding: 0 8px;
+				margin-bottom: 16px;
+
+				a {
+					width: 100%;
+					height: 137px;
+					display: block;
+					overflow: hidden;
+					border: 1px solid #e2e2e2;
+					.border-radius(6px);
+					background: #f5f5f5 url("../img/sprites/icon-image.png") center no-repeat;
+				}
+			}
+		}
+
+	}
+
+	.text-box {
+		color: #9a9a9a;
+		padding-bottom: 10px;
 	}
 }
