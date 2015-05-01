@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Архитектурное проектирование</title>
+    <!-- Bootstrap -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="js/mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet">
+    <link href="css/main.less" rel="stylesheet/less">
+    <script src="js/less.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav visible-md-block visible-lg-block">
+                    <li>
+                        <a href="#">
+                            <span>Портфолио</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Услуги</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-expanded="false">
+                            <span>Школа дизайна<i class="fa fa-angle-down"></i></span>
+                        </a>
+                        <div class="dropdown-menu dropnav" role="menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8 left-col">
+                                        <div class="row">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="dropnav-title">
+                                                        <a href="#">О школе дизайна</a>
+                                                        <i class="icon-l"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="dropnav-title">
+                                                        <a href="#">Каталог курсов</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <ul class="drop-menu">
+                                                        <li><a href="#">Как это работает?</a></li>
+                                                        <li><a href="#">Расписание</a></li>
+                                                        <li><a href="#">Отзывы и результаты</a></li>
+                                                        <li><a href="#">Выпускники</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <ul class="drop-menu">
+                                                        <li><a href="#">Дизайн интреьеров</a></li>
+                                                        <li><a href="#">Коммерческая визуализация</a></li>
+                                                        <li><a href="#">Создание студии</a></li>
+                                                        <li><a href="#">Для прессы</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-md-offset-1">
+                                        <div class="drop-menu single">
+                                            <div class="dropnav-title">
+                                                <a href="#">База знаний</a>
+                                                <i class="icon-r"></i>
+                                            </div>
+                                            <ul class="drop-menu">
+                                                <li><a href="#">Консультации</a></li>
+                                                <li><a href="#">d-e-s-i-g-n.tv</a></li>
+                                                <li><a href="#">На форум<i class="link"></i></a></li>
+                                                <li><a href="#">Дизайн-конференция<i class="link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-expanded="false">
+                            <span class="about">О компании<i class="fa fa-angle-down"></i></span>
+                        </a>
+                        <div class="dropdown-menu dropnav" role="menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8 left-col">
+                                        <div class="row">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="dropnav-title">
+                                                        <a href="#">Общая информация</a>
+                                                        <div class="dropnav-avatar">
+                                                            <img src="img/sprites/popover-info.png">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4"></div>
+                                                <div class="col-md-4"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <ul class="drop-menu">
+                                                        <li><a href="#">О студии дизайна</a></li>
+                                                        <li><a href="#">О студии визуализации</a></li>
+                                                        <li><a href="#">Как мы работаем?</a></li>
+                                                        <li><a href="#">Медиа</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <ul class="drop-menu">
+                                                        <li><a href="#">Клиенты</a></li>
+                                                        <li><a href="#">Экскурсия по офисам</a></li>
+                                                        <li><a href="#">Юр. информация</a></li>
+                                                        <li><a href="#">Для прессы</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <ul class="drop-menu">
+                                                        <li><a href="#">Команда</a></li>
+                                                        <li><a href="#">Вакансии</a></li>
+                                                        <li><a href="#">Статистика</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-md-offset-1">
+                                        <div class="drop-menu single">
+                                            <div class="dropnav-title">
+                                                <a href="#">Станислав Орехов</a>
+                                                <div class="dropnav-avatar">
+                                                    <img src="img/avatar-orekhov.png">
+                                                </div>
+                                            </div>
+                                            <ul class="drop-menu">
+                                                <li><a href="#">Фотографии</a></li>
+                                                <li><a href="#">Интервью (видео)</a></li>
+                                                <li><a href="#">Личная история</a></li>
+                                                <li><a href="#">Путешествия</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Новости</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Контакты</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav hidden-md hidden-lg">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-expanded="false">
+                            <span>Меню<i class="fa fa-angle-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="#">Портфолио</a>
+                            </li>
+                            <li>
+                                <a href="#">Услуги</a>
+                            </li>
+                            <li>
+                                <a href="#">Школа дизайна</a>
+                            </li>
+                            <li>
+                                <a href="#">О компании</a>
+                            </li>
+                            <li>
+                                <a href="#">Новости</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="navbar-right">
+                    <span class="phone">+7 495 647-85-90</span>
+                    <div id="sb-search" class="sb-search pull-left">
+                        <form class="navbar-form" role="search">
+                            <input class="sb-search-input" placeholder="Поиск" type="text" value="" name="search"
+                                   id="search">
+                            <input class="sb-search-submit" type="submit" value="">
+                            <span class="sb-icon-search"><i class="fa fa-search"></i></span>
+                        </form>
+                    </div>
+                    <a href="#" class="avatar">
+                        <img src="img/avatar.jpg" alt="avatar">
+                    </a>
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+</header>
+<div class="index">
+    <div class="content-header">
+        <div class="grad-bg"></div>
+        <div class="container">
+            <h1 class="top-text">Мы создаем <a href="#">дизайн интерьера</a>, разрабатывааем <a href="#">3D-проекты</a>
+                <br>и передаем накопленный опыт в <a href="#">Школе дизайна</a>
+            </h1>
+        </div>
+        <div class="slider" data-mcs-theme="light-thin">
+            <div class="slide">
+                <img src="img/tmp/d-slide-1.jpg" alt="slide">
+                <p><a href="#">Barkli Park — интерьеры «Philip Stark»<</a></p>
+            </div>
+            <div class="slide">
+                <img src="img/tmp/d-slide-2.jpg" alt="slide">
+                <p><a href="#">Кубинка 60 — Современное Шале</a></p>
+            </div>
+            <div class="slide">
+                <img src="img/tmp/d-slide-3.jpg" alt="slide">
+                <p><a href="#">Классическая спальня в фиолетово-зеленых тонах</a></p>
+            </div>
+            <div class="slide">
+                <img src="img/tmp/d-slide-1.jpg" alt="slide">
+                <p><a href="#">Barkli Park — интерьеры «Philip Stark»</a></p>
+            </div>
+            <div class="slide">
+                <img src="img/tmp/d-slide-3.jpg" alt="slide">
+                <p><a href="#">Классическая спальня в фиолетово-зеленых тонах</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="gray-block">
+        <div class="container">
+            <h2>О компании</h2>
+            <div class="about">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="video-block">
+                            <img src="img/tmp/index-video.jpg" alt="video">
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="text">
+                            <p>Студия Станислава Орехова была основана в 2002 году.
+                                За 12 лет работы мы выполнили десятки дизайн-проектов
+                                и концепций, более пяти тысяч 3D изображений,
+                                а в Школе дизайна были подготовлены сотни специалистов.
+                            </p>
+                            <p>Мы выстраиваем свою работу на фундаментальных ценностях — это честность, открытость, высокий профессионализм, ответственность и удовольствие
+                                от работы.
+                            </p>
+                        </div>
+                        <ul class="about-link">
+                            <li><a href="#">О студии</a></li>
+                            <li><a href="#">Для прессы</a></li>
+                            <li><a href="#">Станислав Орехов</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="subscribe">
+                            <div class="subscribe-title">Впервые на сайте?</div>
+                            <p>Наша цель — распостранять знания о дизайне. Поэтому каждому новому подписчику мы открываем доступ
+                                к Базе знаний
+                                и дарим сертификат на 3000 рублей.
+                            </p>
+                            <form class="subscribe-form">
+                                <div class="form-group has-success has-feedback">
+                                    <input type="text" class="form-control form-color" placeholder="E-mail">
+                                    <span class="form-control-feedback"></span>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-green invert">Стать подписчиком</button>
+                                </div>
+                                <div class="text-center num">уже подписалось 65 789 человек</div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2>Основные услуги</h2>
+            <div class="row">
+                <div class="col-xs-4">
+                    <div class="service">
+                        <div class="service-image">
+                            <img src="img/design-interior.jpg" class="img-responsive" alt="">
+                        </div>
+                        <div class="service-text">
+                            <h4>Дизайн интерьеров</h4>
+                            <p>Мы помогаем владельцам жилой и коммерческой недвижимости оптимально спроектировать,
+                                а затем воплотить в жизнь авторский дизайн интерьера современной квартиры, загородного дома, ресторана или офиса. А интересные
+                                и продуманные технические решения позволят создать красивый и функциональный интерьер без траты лишних денег.</p>
+                        </div>
+                        <div class="service-link">
+                            <ul>
+                                <li class="item1">
+                                    <div class="item-icon">
+                                        <img src="img/sprites/ids1.png" class="img-responsive" alt="#">
+                                    </div>
+                                    <a href="#">Дизайн жилых интерьеров</a>
+                                    <span>(дома и апартаменты)</span>
+                                </li>
+                                <li class="item2">
+                                    <div class="item-icon">
+                                        <img src="img/sprites/ids2.png" class="img-responsive" alt="#">
+                                    </div>
+                                    <a href="#">Дизайн коммерческих интерьеров</a>
+                                    <span>(рестораны, отели, общ. зоны, офисы)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="service">
+                        <div class="service-image">
+                            <img src="img/visual.jpg" class="img-responsive" alt="">
+                        </div>
+                        <div class="service-text">
+                            <h4>Архитектурная визуализация</h4>
+                            <p>Создаем фотореалистичные изображения недвижимости для корпоративных клиентов
+                                и профессионалов: дизайнеров, архитекторов.</p>
+                            <p>Качественные 3D-изображения поможет согласовать проект, наглядно покажет свет, цвет, материалы, убережет от возможных проектных ошибок.</p>
+                        </div>
+                        <div class="service-link">
+                            <ul>
+                                <li>
+                                    <div class="item-icon">
+                                        <img src="img/sprites/icon-s1.png" class="img-responsive" alt="#">
+                                    </div>
+                                    <a href="#">Визуализация для девелоперов</a>
+                                </li>
+                                <li>
+                                    <div class="item-icon">
+                                        <img src="img/sprites/icon-s2.png" class="img-responsive" alt="#">
+                                    </div>
+                                    <a href="#">Визуализация для дизайнеров и архитекторов</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="service">
+                        <div class="service-image">
+                            <img src="img/school-desigh.jpg" class="img-responsive" alt="">
+                        </div>
+                        <div class="service-text">
+                            <h4>Школа дизайна</h4>
+                            <ul class="list">
+                                <li>Полный комплекс дисциплин профессии «дизайнер интерьера» и «3D визуализатор»
+                                    от нулевого уровня до профессионала</li>
+                                <li>Технологии привлечения клиентов в дизайне</li>
+                                <li> Эффективная работе в команде и создание собственной студии</li>
+                            </ul>
+                        </div>
+                        <div class="service-link">
+                            <ul>
+                                <li>
+                                    <div class="item-icon">
+                                        <img src="img/sprites/icon-star.png" class="img-responsive" alt="#">
+                                    </div>
+                                    <a href="#">Система: дизайн интерьеров</a>
+                                </li>
+                                <li>
+                                    <div class="item-icon">
+                                        <img src="img/sprites/icon-star.png" class="img-responsive" alt="#">
+                                    </div>
+                                    <a href="#">Тренинг: визуализация интерьеров</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <h2>Клиенты</h2>
+            <div class="clients-list">
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">
+                            <img class="gray img-responsive1" src="img/partners/sberbank.png">
+                            <img class="color img-responsive1" src="img/partners/sberbank-color.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="gray img-responsive1" src="img/partners/gazprom.png">
+                            <img class="color img-responsive1" src="img/partners/gazprom-color.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="gray img-responsive1" src="img/partners/starck.png">
+                            <img class="color img-responsive1" src="img/partners/starck--color.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="gray img-responsive1" src="img/partners/yoo.png">
+                            <img class="color img-responsive1" src="img/partners/yoo-color.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="gray img-responsive1" src="img/partners/logo1.png">
+                            <img class="color img-responsive1" src="img/partners/logo-color.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="gray img-responsive1" src="img/partners/barkli.png">
+                            <img class="color img-responsive1" src="img/partners/barkl-color.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="gray img-responsive1" src="img/partners/hines.png">
+                            <img class="color img-responsive1" src="img/partners/hines-color.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="gray img-responsive1" src="img/partners/incom.png">
+                            <img class="color img-responsive1" src="img/partners/incom-color.png">
+                        </a>
+                    </li>
+                    <!-- 2  -->
+                    <li>
+                        <a href="#">
+                            <img class="gray img-responsive1" src="img/partners/midland.png">
+                            <img class="color img-responsive1" src="img/partners/midland-color.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="gray img-responsive1" src="img/partners/fxpro.png">
+                            <img class="color img-responsive1" src="img/partners/fxpro-color.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="gray img-responsive1" src="img/partners/ginza.png">
+                            <img class="color img-responsive1" src="img/partners/ginza-color.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="gray img-responsive1" src="img/partners/komitet.png">
+                            <img class="color img-responsive1" src="img/partners/komitet-color.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="gray img-responsive1" src="img/partners/kelly.png">
+                            <img class="color img-responsive1" src="img/partners/kelly-color.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="gray img-responsive1" src="img/partners/svyaznoy.png">
+                            <img class="color img-responsive1" src="img/partners/svyaznoy-color.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="gray img-responsive1" src="img/partners/tashir.png">
+                            <img class="color img-responsive1" src="img/partners/tashir-color.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="gray img-responsive1" src="img/partners/kinross.png">
+                            <img class="color img-responsive1" src="img/partners/kinross-color.png">
+                        </a>
+                    </li>
+                    <!-- 3 -->
+                    <li>
+                        <a href="#">
+                            <img class="gray img-responsive1" src="img/partners/aeroflot.png">
+                            <img class="color img-responsive1" src="img/partners/aeroflot-color.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="gray img-responsive1" src="img/partners/donstroy.png">
+                            <img class="color img-responsive1" src="img/partners/donstroy-color.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="gray img-responsive1" src="img/partners/agroimpex.png">
+                            <img class="color img-responsive1" src="img/partners/agroimpex-color.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="gray img-responsive1" src="img/partners/mirax.png">
+                            <img class="color img-responsive1" src="img/partners/mirax-color.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="gray img-responsive1" src="img/partners/adg.png">
+                            <img class="color img-responsive1" src="img/partners/adg-color.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="gray img-responsive1" src="img/partners/gals.png">
+                            <img class="color img-responsive1" src="img/partners/gals-color.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="gray img-responsive1" src="img/partners/pik.png">
+                            <img class="color img-responsive1" src="img/partners/pik-color.png">
+                        </a>
+                    </li>
+                </ul>
+                <p>У нас заказывают девелоперы, рекламные агентства, строители, корпорации, архитектурные студии, индивидуальные дизайнеры
+                    <br/>и архитекторы, а также частные клиенты, желающие сделать ремонт или построить дом.</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="content-block">
+        <div class="container">
+            <h2>Ближайшие мероприятия</h2>
+            <div class="next-event">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="event-item">
+                            <div class="event-image">
+                                <img class="img-responsive" src="img/tmp/event1.jpg" alt="#">
+                            </div>
+                            <div class="event-text">
+                                <div class="event-legend clearfix">
+                                    <div class="event-calendar red">
+                                        <span class="month">июнь</span>
+                                        <span class="date">21</span>
+                                    </div>
+                                    <span class="days-left">Уже через 2 дня!</span>
+                                    <span class="places">осталось 5 мест</span>
+                                </div>
+                                <div class="event-title">
+                                    <a href="#">Тренинг-трансформация: Привлечение клиентов и Создание студии 2014</a>
+                                </div>
+                                <span class="event-author">Станислав Орехов</span>
+                            </div>
+                            <div class="event-bottom">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <span class="event-price">37 000 Р</span>
+                                        <span class="event-price-old">45 000 Р<i></i></span>
+                                    </div>
+                                    <div class="col-xs-6 text-right">
+                                        <a href="#" class="btn btn-green">Записаться</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="event-item">
+                            <div class="event-image">
+                                <img class="img-responsive" src="img/tmp/event2.jpg" alt="#">
+                            </div>
+                            <div class="event-text">
+                                <div class="event-legend clearfix">
+                                    <div class="event-calendar red">
+                                        <span class="month">июнь</span>
+                                        <span class="date">21</span>
+                                    </div>
+                                    <span class="days-left">Уже через 2 дня!</span>
+                                    <span class="places">осталось 5 мест</span>
+                                </div>
+                                <div class="event-title">
+                                    <a href="#">Мастер-класс «Вдохновение путешествиями»</a>
+                                </div>
+                                <span class="event-author">Станислав Орехов</span>
+                            </div>
+                            <div class="event-bottom">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <span class="event-price">37 000 Р</span>
+                                        <span class="event-price-old">45 000 Р<i></i></span>
+                                    </div>
+                                    <div class="col-xs-6 text-right">
+                                        <a href="#" class="btn btn-green">Записаться</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="event-item">
+                            <div class="event-image">
+                                <img class="img-responsive" src="img/tmp/event3.jpg" alt="#">
+                            </div>
+                            <div class="event-text">
+                                <div class="event-legend clearfix">
+                                    <div class="event-calendar">
+                                        <span class="month">июнь</span>
+                                        <span class="date">21</span>
+                                    </div>
+                                    <span class="days-left"></span>
+                                    <span class="places">осталось 5 мест</span>
+                                </div>
+                                <div class="event-title">
+                                    <a href="#">ТСистема: Коммерческая визуализация</a>
+                                </div>
+                                <span class="event-author">Станислав Орехов</span>
+                            </div>
+                            <div class="event-bottom">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <span class="event-price">6 000 Р</span>
+                                        <span class="event-price-old">9 000 Р<i></i></span>
+                                    </div>
+                                    <div class="col-xs-6 text-right">
+                                        <a href="#" class="btn btn-green">Записаться</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="announce">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <h4><a href="#">Новости</a></h4>
+                        <div class="news-list" data-mcs-theme="light-thin">
+                            <ul>
+                                <li>
+                                    <div class="date">12 июль</div>
+                                    <a class="news-link" href="#">Выступление Станислава Орехова в Самаре</a>
+                                    <a class="news-link" href="#">Видео-записи лекции Станислава Орехова с выставки Designers Club St. Petersburg</a>
+                                </li>
+                                <li>
+                                    <div class="date">12 июль</div>
+                                    <a class="news-link" href="#">Победа в специальной номинации конкурса «Стекло в интерьере»</a>
+                                </li>
+                                <li>
+                                    <div class="date">12 июль</div>
+                                    <a class="news-link" href="#">Какие результаты дизайнер получает вне зоны комфорта?</a>
+                                </li>
+                                <li>
+                                    <div class="date">12 марта</div>
+                                    <a class="news-link" href="#">Как методично увеличивать известность своего бренда</a>
+                                </li>
+                                <li>
+                                    <div class="date">12 июль</div>
+                                    <a class="news-link" href="#">Выступление Станислава Орехова в Самаре</a>
+                                    <a class="news-link" href="#">Видео-записи лекции Станислава Орехова с выставки Designers Club St. Petersburg</a>
+                                </li>
+                                <li>
+                                    <div class="date">12 июль</div>
+                                    <a class="news-link" href="#">Победа в специальной номинации конкурса «Стекло в интерьере»</a>
+                                </li>
+                                <li>
+                                    <div class="date">12 июль</div>
+                                    <a class="news-link" href="#">Какие результаты дизайнер получает вне зоны комфорта?</a>
+                                </li>
+                                <li>
+                                    <div class="date">12 марта</div>
+                                    <a class="news-link" href="#">Как методично увеличивать известность своего бренда</a>
+                                </li>
+                                <li>
+                                    <div class="date">12 июль</div>
+                                    <a class="news-link" href="#">Выступление Станислава Орехова в Самаре</a>
+                                    <a class="news-link" href="#">Видео-записи лекции Станислава Орехова с выставки Designers Club St. Petersburg</a>
+                                </li>
+                                <li>
+                                    <div class="date">12 июль</div>
+                                    <a class="news-link" href="#">Победа в специальной номинации конкурса «Стекло в интерьере»</a>
+                                </li>
+                                <li>
+                                    <div class="date">12 июль</div>
+                                    <a class="news-link" href="#">Какие результаты дизайнер получает вне зоны комфорта?</a>
+                                </li>
+                                <li>
+                                    <div class="date">12 марта</div>
+                                    <a class="news-link" href="#">Как методично увеличивать известность своего бренда</a>
+                                </li>
+                            </ul>
+                            <div class="gradient"></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <h4><a href="#">База знаний</a></h4>
+                        <div class="knowledge">
+                            <ul>
+                                <li>
+                                    <a class="news-link" href="#">Мастер-класс: Дизайн интерьеров</a>
+                                </li>
+                                <li>
+                                    <a class="news-link" href="#">10 ключевых этапов дизайна интерьера</a>
+                                </li>
+                                <li>
+                                    <a class="news-link" href="#">Тренинг: Светодизайн LIVE</a>
+                                </li>
+                                <li>
+                                    <a class="news-link" href="#">Мастер-класс: Дизайн классических интерьеров</a>
+                                </li>
+                                <li>
+                                    <a class="news-link" href="#">Мастер-класс: Основы планировочных решений</a>
+                                </li>
+                                <li>
+                                    <a class="news-link" href="#">Мастер-класс: Дизайн интерьеров</a>
+                                </li>
+                                <li>
+                                    <a class="news-link" href="#">Задачи 3d визуализации в дизайне интерьеров</a>
+                                </li>
+                                <li>
+                                    <a class="news-link" href="#">Как читать планировки и чертежи</a>
+                                </li>
+                                <li>
+                                    <a class="news-link" href="#">Видео: Композиция в интерьере</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <h4><a href="#">Консультации</a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="position">
+        <div class="left">
+            <div class="copyrigths clearfix">
+                <ul class="pull-left contacts">
+                    <li>
+                        <strong>Звоните:</strong>
+                        <span> +7 495 648 85 90</span>
+                    </li>
+                    <li>
+                        <strong>Пишите:</strong>
+                        <a href="mailto:coaching@d-e-s-i-g-n.ru"> coaching@d-e-s-i-g-n.ru</a>
+                    </li>
+                    <li>
+                        <a href="#" class="cr-link">© 2014 Студия Станислава Орехова</a>
+                    </li>
+                </ul>
+                <ul class="pull-right advanced-links">
+                    <li>
+                        <a href="#">Карта сайта</a>
+                    </li>
+                    <li>
+                        <a href="#" class="copy">© 2014 Студия Станислава Орехова</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-block clearfix">
+            <span class="descr pull-left">Подписывайтесь:</span>
+            <ul class="social">
+                <li>
+                    <a href="#"><i class="fb">
+                        <span>2000+</span>
+                    </i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="vk">
+                        <span>2000+</span>
+                    </i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="tw">
+                        <span>4000+</span>
+                    </i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="yt">
+                        <span>5000+</span>
+                    </i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="inst">
+                        <span>3000+</span>
+                    </i></a>
+                </li>
+            </ul>
+            <a href="#" class="site-map">Карта сайта</a>
+        </div>
+        <div class="right">
+            <div class="copy-r">
+                <i class="ukr"></i>
+                <ul>
+                    <li>
+                        <span>Дизайн макетов <sup>2014</sup></span>
+                    </li>
+                    <li>
+                        <a href="#">Студия Тараса Сэнькива</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-ui/jquery-ui.min.js"></script>
+<script src="js/jquery.flexslider.js"></script><script src="js/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/uisearch.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+    new UISearch(document.getElementById('sb-search'));
+    function setEqualHeight() {
+        var blockheight = $("div.blue-block").outerHeight();
+        $(".blue-bg-block").height(blockheight);
+    }
+    $(document).ready(function () {
+        setEqualHeight($(".blue-block > .blue-bg-block"));
+    });
+</script>
+
+</body>
+</html>

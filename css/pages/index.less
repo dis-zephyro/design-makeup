@@ -1,0 +1,505 @@
+
+.index {
+
+	.container {
+		width: 1320px;
+
+		@media (min-width: 320px) {
+			width: 1310px;
+		}
+
+		@media (min-width: 1005px) {
+			width: 1310px;
+		}
+
+		@media (min-width: 1280px) {
+			width: 1310px;
+		}
+
+		@media (min-width: 1650px) {
+			width: 1310px;
+		}
+
+	}
+
+	h2 {
+		font-size: 28px;
+		line-height: 36px;
+		font-weight: 700;
+		text-align: center;
+		margin-bottom: 40px;
+		font-family: @font-roboto;
+	}
+
+	.top-text {
+		padding: 35px 0;
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 32px;
+		text-align: center;
+		margin-bottom: 10px;
+		font-family: @font-roboto;
+
+		a {
+			color: @color-blue;
+			text-decoration: none;
+			border-bottom: 1px solid #c5e0ee;
+
+			&:hover {
+				text-decoration: none;
+				border-color: transparent;
+			}
+		}
+	}
+
+	.gray-block {
+		padding-top: 50px;
+		padding-bottom: 70px;
+	}
+
+	.content-block {
+		padding: 50px 0;
+	}
+
+	.about {
+		width: 1312px;
+		height: 400px;
+		background: #fff;
+		margin-bottom: 100px;
+		border: 1px solid #e5e5e5;
+		.border-radius(8px);
+
+		.video-block {
+			width: 416px;
+			overflow: hidden;
+			margin-top: 55px;
+		}
+
+		.text {
+			height: 265px;
+			margin-top: 55px;
+			font-size: 14px;
+			line-height: 24px;
+
+			p {
+				margin-bottom: 25px;
+			}
+		}
+
+		.about-link {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+
+			li {
+				margin-right: 15px;
+				display: inline-block;
+
+				a {
+					color: @color-blue;
+					text-decoration: none;
+					border-bottom: 1px solid #c5e0ee;
+
+					&:hover {
+						text-decoration: none;
+						border-color: transparent;
+					}
+				}
+			}
+		}
+
+		.subscribe {
+			width: 416px;
+			height: 400px;
+			float: right;
+			margin-right: -2px;
+			padding: 50px 64px;
+			font-family: @font-roboto;
+			background: url("../img/bg-subscribe.jpg") 0 0 no-repeat;
+
+			.subscribe-title {
+				font-size: 18px;
+				font-weight: 700;
+				margin-bottom: 20px;
+			}
+
+			p {
+				line-height: 24px;
+				margin-bottom: 30px;
+			}
+
+			.btn {
+				width: 100%;
+				display: block;
+			}
+
+			.num {
+				color: #83abbf;
+				font-style: italic;
+			}
+		}
+	}
+
+
+	.service {
+		height: 752px;
+		overflow: hidden;
+		background: #faf6ed;
+		margin-bottom: 80px;
+		border: 1px solid #d7d3cc;
+		.border-radius(8px);
+
+		.service-image {
+			height: 240px;
+			overflow: hidden;
+		}
+
+		.service-text {
+			padding: 50px;
+			height: 329px;
+			background: #fff;
+			border-bottom: 1px solid #d7d3cc;
+
+			.list {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+
+				li {
+					padding-left: 20px;
+					padding-bottom: 7px;
+					margin-bottom: 20px;
+					background: url("../img/sprites/list-item-green.png") 0 5px no-repeat;
+				}
+			}
+		}
+
+		.service-link {
+
+			padding: 24px 55px;
+
+
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+
+			li {
+				height: 60px;
+				position: relative;
+				padding-top: 5px;
+				padding-left: 55px;
+				margin-bottom: 10px;
+
+				.item-icon {
+					top:0;
+					left: 0;
+					width: 40px;
+					height: 40px;
+					position: absolute;
+				}
+
+				a {
+					font-size: 14px;
+					color: @color-blue;
+					text-decoration: none;
+					border-bottom: 1px solid #c5e0ee;
+
+					&:hover {
+						text-decoration: none;
+						border-color: transparent;
+					}
+				}
+
+				span {
+					display: block;
+					color: #999999;
+					font-size: 12px;
+				}
+			}
+		}
+	}
+
+	.clients-list {
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+
+			li {
+				float: left;
+				width: 161px;
+				height: 60px;
+				padding: 0 5px;
+				display: table;
+				position: relative;
+				margin-bottom: 50px;
+
+				a {
+					width: 151px;
+					height: 60px;
+					text-align: center;
+					display: table-cell;
+					vertical-align: middle;
+
+					img {
+						max-width: 100%;
+						height: auto;
+					}
+
+					.gray {
+						display: inline-block;
+					}
+
+					.color {
+						display: none;
+					}
+
+					&:hover {
+
+						.gray {
+							display: none;
+						}
+						.color {
+							display: inline-block;
+						}
+					}
+				}
+			}
+		}
+
+		p {
+			color: #9a9a9a;
+			font-style: italic;
+			text-align: center;
+		}
+	}
+
+	.next-event {
+		margin-bottom: 100px;
+
+		.event-item {
+			height: 344px;
+			overflow: hidden;
+			background: #fafafa;
+			border: 1px solid #e5e5e5;
+			.border-radius(8px);
+
+			.event-image {
+
+			}
+		}
+
+		.event-text {
+			height: 153px;
+			padding: 0 23px;
+			background: #fff;
+			border-bottom: 1px solid #e5e5e5;
+
+			.event-legend {
+				height: 50px;
+				position: relative;
+
+				.event-calendar {
+					top: -22px;
+					left: 0;
+					width: 56px;
+					height: 64px;
+					position: absolute;
+					background: url("../img/sprites/calendar-blue.png") 0 0 no-repeat;
+
+					&.red {
+						background: url("../img/sprites/calendar-red.png") 0 0 no-repeat;
+
+						.date {
+							color: #f3594f;
+						}
+					}
+
+					.month {
+						color: #fff;
+						display: block;
+						font-size: 11px;
+						height: 22px;
+						line-height: 22px;
+						text-align: center;
+					}
+
+					.date {
+						height: 38px;
+						color: #3d9ccc;
+						display: block;
+						font-size: 28px;
+						line-height: 38px;
+						text-align: center;
+						font-weight: 700;
+						font-family: @font-roboto;
+					}
+				}
+
+				.days-left {
+					float: left;
+					height: 50px;
+					color: #f3594f;
+					line-height: 50px;
+					margin-left: 95px;
+					display: inline-block;
+				}
+
+				.places {
+					float: right;
+					height: 50px;
+					color: #f3594f;
+					line-height: 50px;
+					display: inline-block;
+				}
+			}
+
+			.event-title {
+				height: 75px;
+				padding-top: 5px;
+
+				a {
+					font-size: 16px;
+					font-weight: 300;
+					line-height: 24px;
+					color: @color-blue;
+					text-decoration: none;
+					font-family: @font-roboto;
+				}
+			}
+
+			.event-author {
+				color: #9a9a9a;
+				font-size: 12px;
+			}
+		}
+
+		.event-bottom {
+			padding: 14px 23px 14px 23px;
+
+			.event-price {
+				height: 32px;
+				color: #4b4b4b;
+				font-size: 18px;
+				font-weight: 300;
+				line-height: 32px;
+				margin-right: 10px;
+				display: inline-block;
+				font-family: @font-roboto;
+			}
+
+			.event-price-old {
+				height: 32px;
+				color: #999999;
+				font-size: 13px;
+				font-weight: 300;
+				line-height: 32px;
+				position: relative;
+				display: inline-block;
+				font-family: @font-roboto;
+
+				i {
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 16px;
+					position: absolute;
+					border-bottom: 1px solid #f3594f;
+					-webkit-transform: rotate(-7deg);
+					-moz-transform: rotate(-7deg);
+					-o-transform: rotate(-7deg);
+					transform: rotate(-7deg);
+
+				}
+			}
+
+			.btn-green {
+				padding: 4px 20px;
+			}
+		}
+	}
+
+	.announce {
+		margin-bottom: 50px;
+
+		h2 {
+			a {
+				color: #4b4b4b;
+				text-decoration: underline;
+			}
+		}
+
+		.news-list {
+			height: 300px;
+			overflow: hidden;
+			position: relative;
+
+			ul {
+				width: 390px;
+				margin: 0;
+				overflow: hidden;
+				list-style: none;
+				padding: 0 0 0 80px;
+				background: url("../img/sprites/news-line.png") 32px 0 repeat-y;
+
+				li {
+					padding-top: 5px;
+					position: relative;
+
+					.date {
+						top: 0;
+						left: -80px;
+						width: 64px;
+						height: 44px;
+						color: #88bcd6;
+						font-size: 12px;
+						padding-top: 14px;
+						text-align: center;
+						position: absolute;
+						background: url("../img/sprites/news-date-last.png") 0 0 no-repeat;
+					}
+
+					&:first-child .date {
+						width: 64px;
+						height: 34px;
+						padding-top: 5px;
+						background: url("../img/sprites/news-date-first.png") 0 0 no-repeat;
+					}
+				}
+
+				a {
+					display: block;
+					color: @color-blue;
+					text-decoration: underline;
+					margin-bottom: 20px;
+				}
+			}
+
+			.gradient {
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				height: 95px;
+				position: absolute;
+				background: url("../img/sprites/gradient.png") bottom left no-repeat;
+			}
+		}
+
+		.mCS-light-thin.mCSB_scrollTools .mCSB_draggerRail {
+			background: url("../img/sprites/news-line.png") 0 0 repeat-y;
+		}
+
+		.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+			background-color: transparent;
+		}
+
+		.mCSB_scrollTools .mCSB_dragger {
+			left: 4px;
+			width: 8px;
+			background: #aad2e6;
+			.border-radius(4px);
+		}
+	}
+}

@@ -69,3 +69,9 @@ $(".slider").mCustomScrollbar({
     autoExpandScrollbar:true,
     advanced:{autoExpandHorizontalScroll:true}
 });
+
+$(".news-list").mCustomScrollbar({
+    theme:"light-thin"
+});
+
+
