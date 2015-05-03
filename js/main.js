@@ -70,6 +70,14 @@ $(".slider").mCustomScrollbar({
     advanced:{autoExpandHorizontalScroll:true}
 });
 
+$(".event-slider").mCustomScrollbar({
+    axis:"x",
+    theme:"dark-thin",
+    mouseWheel: false,
+    autoExpandScrollbar:true,
+    advanced:{autoExpandHorizontalScroll:true}
+});
+
 $(".news-list").mCustomScrollbar({
     theme:"light-thin"
 });
