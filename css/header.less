@@ -159,13 +159,229 @@ header {
 		.drop-menu.single {
 			padding-left: 30px;
 		}
-
-
-
 		.left-col {
 			position: relative;
 			padding-left: 128px;
 			border-right: 1px dotted #cccccc;
 		}
 	}
+
+	.service-nav-inner {
+		width: 1248px;
+		margin: 0 auto;
+		margin-bottom: 40px;
+
+		.service-nav {
+			height: 720px;
+			overflow: hidden;
+			padding: 45px 20px;
+			border: 1px solid #e6e6e6;
+			.border-radius(6px);
+
+			a {
+				color: #4c4c4c;
+				font-size: 14px;
+				line-height: 24px;
+				text-decoration: none;
+			}
+
+			.service-nav-title {
+				font-size: 20px;
+				font-weight: 700;
+				line-height: 20px;
+				margin-bottom: 35px;
+				margin-left: 40px;
+				font-family: @font-roboto;
+			}
+
+			.service-nav-top-link {
+				height: 180px;
+				display: block;
+				text-align: center;
+				margin-bottom: 30px;
+
+				span {
+					border-bottom: 1px solid #dbdbdb;
+				}
+			}
+
+			.service-nav-icon {
+				width: 88px;
+				height: 88px;
+				overflow: hidden;
+				.border-radius(44px);
+				margin: 0 auto 20px auto;
+
+				.gray {
+					display: block;
+				}
+
+				.color {
+					display: none;
+				}
+			}
+
+			.base-link {
+				height: 185px;
+				padding: 0;
+				list-style: none;
+				margin: 0 0 0 22px;
+
+				li {
+					margin-bottom: 5px;
+					padding: 5px 0 5px 48px;
+
+					a {
+						border-bottom: 1px solid #dbdbdb;
+					}
+				}
+
+				&.base-link-one {
+
+					.item1 {
+						background: url("../img/sprites/base-link-1.png") left center no-repeat;
+					}
+					.item2 {
+						background: url("../img/sprites/base-link-2.png") left center no-repeat;
+					}
+					.item3 {
+						background: url("../img/sprites/base-link-3.png") left center no-repeat;
+					}
+					.item4 {
+						background: url("../img/sprites/base-link-4.png") left center no-repeat;
+					}
+				}
+
+				&.base-link-two {
+
+					.item1 {
+						background: url("../img/sprites/base-link-5.png") 10px 5px no-repeat;
+					}
+					.item2 {
+						background: url("../img/sprites/base-link-7.png") 0 -4px no-repeat;
+					}
+					.item3 {
+						background: url("../img/sprites/base-link-6.png") 10px 9px no-repeat;
+					}
+				}
+
+				&.base-link-three {
+
+					.item1 {
+						background: url("../img/sprites/base-link-8.png") 10px 10px no-repeat;
+					}
+					.item2 {
+						background: url("../img/sprites/base-link-9.png") 10px 10px no-repeat;
+					}
+					.item3 {
+						background: url("../img/sprites/base-link-10.png") 10px 10px no-repeat;
+					}
+					.item4 {
+						background: url("../img/sprites/base-link-11.png") 10px 10px no-repeat;
+					}
+				}
+			}
+
+			.service-nav-sub-title {
+				color: #676767;
+				font-weight: 700;
+				margin: 0 0 15px 22px;
+			}
+
+			.sub-link {
+				padding: 0;
+				height: 190px;
+				list-style: none;
+				margin: 0 0 0 22px;
+
+				li {
+					color: #808080;
+					font-size: 12px;
+					margin-bottom: 10px;
+
+					a {
+						color: #808080;
+						text-decoration: none;
+						border-bottom: 1px solid #dbdbdb;
+					}
+				}
+			}
+
+			&:hover {
+				.box-shadow(0px -4px 14px 0px rgba(0, 0, 0, 0.17));
+
+				a {
+					color: #2383b3;
+				}
+
+				.service-nav-top-link {
+
+					span {
+						border-bottom: 1px solid #bfdcea;
+					}
+				}
+
+				.service-nav-icon {
+					.gray {
+						display: none;
+					}
+
+					.color {
+						display: block;
+					}
+				}
+
+				.base-link {
+
+					&.base-link-one {
+
+						.item1 {
+							background: url("../img/sprites/base-link-1.png") left center no-repeat;
+						}
+						.item2 {
+							background: url("../img/sprites/base-link-2.png") left center no-repeat;
+						}
+						.item3 {
+							background: url("../img/sprites/base-link-3.png") left center no-repeat;
+						}
+						.item4 {
+							background: url("../img/sprites/base-link-4.png") left center no-repeat;
+						}
+					}
+
+					&.base-link-two {
+
+						.item1 {
+							background: url("../img/sprites/base-link-5.png") 10px -45px no-repeat;
+						}
+						.item2 {
+							background: url("../img/sprites/base-link-7.png") 0 -54px no-repeat;
+						}
+						.item3 {
+							background: url("../img/sprites/base-link-6.png") 10px -41px no-repeat;
+						}
+					}
+
+					&.base-link-three {
+
+						.item1 {
+							background: url("../img/sprites/base-link-8.png") 10px -90px no-repeat;
+						}
+						.item2 {
+							background: url("../img/sprites/base-link-9.png") 10px -90px no-repeat;
+						}
+						.item3 {
+							background: url("../img/sprites/base-link-10.png") 10px -90px no-repeat;
+						}
+						.item4 {
+							background: url("../img/sprites/base-link-11.png") 10px -90px no-repeat;
+						}
+					}
+				}
+			}
+		}
+	}
 }
+
+
+
