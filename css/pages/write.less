@@ -1,0 +1,76 @@
+.tmp-color {
+	height: 100%;
+	padding: 100px 0;
+	background: #cce3ee;
+}
+
+.write-inner {
+	width: 1330px;
+	margin: 0 auto;
+	padding: 8px 11px 11px 11px;
+
+	.backward {
+		height: 24px;
+		font-size: 14px;
+		margin-bottom: 5px;
+		color: @color-blue;
+		display: inline-block;
+		text-decoration: none;
+		padding: 0px 0 5px 30px;
+		background: url("../img/sprites/backward.png") 0 0 no-repeat;
+
+		span {
+			border-bottom: 1px solid #98cae3;
+		}
+
+		&:hover {
+			text-decoration: none;
+			color: #f3594f;
+			background: url("../img/sprites/backward.png") 0 -50px no-repeat;
+
+			span {
+				border-bottom-color: transparent;
+			}
+		}
+	}
+
+	.container-write {
+		padding: 0 97px;
+	}
+
+}
+
+.write {
+	overflow: hidden;
+	.border-radius(6px);
+	background: #fff;
+	border: 1px solid #bfdae5;
+	.box-shadow(0px 4px 10px 0px rgba(0, 0, 0, 0.16));
+
+	.write-header {
+		height: 184px;
+		background: #ebf2f5;
+	}
+
+	.write-footer {
+		height: 48px;
+		color: #999999;
+		line-height: 48px;
+		background: #ebf2f5;
+
+		a {
+			color: #999999;
+			text-decoration: none;
+			border-bottom: 1px solid #ced5d7;
+		}
+
+		.copyright {
+			height: 48px;
+			line-height: 48px;
+		}
+	}
+
+	.write-body {
+		height: 440px;
+	}
+}

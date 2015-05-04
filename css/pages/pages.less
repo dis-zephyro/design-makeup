@@ -880,5 +880,97 @@
 	}
 }
 
+.page404 {
+	width: 100%;
+	height: 100%;
+
+	body {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		background: url("../img/bg404.png") top center;
+	}
+
+	.box404 {
+		top: 50%;
+		left: 50%;
+		width: 768px;
+		color: #333333;
+		overflow: hidden;
+		position: absolute;
+		margin-top: -272px;
+		margin-left: -384px;
+		background: #f5f5f5;
+		.border-radius(10px);
+
+		.title-block {
+			height: 193px;
+			font-size: 24px;
+			background: #fff;
+			font-weight: 300;
+			padding-top: 30px;
+			text-align: center;
+			font-family: @font-roboto;
+			border-bottom: 1px solid #dcdcdc;
+
+			span {
+				display: block;
+				font-size: 80px;
+				font-weight: 700;
+				line-height: 80px;
+				margin-bottom: 10px;
+			}
+		}
+
+		.box404-body {
+			margin: 45px 0;
+			padding: 0 60px;
+			overflow: hidden;
+
+			h4 {
+				font-size: 16px;
+				margin-bottom: 15px;
+			}
+
+			p {
+				margin-bottom: 15px;
+			}
+
+			.left-col {
+				float: left;
+				width: 271px;
+				padding-right: 50px;
+				border-right: 1px solid #dcdcdc;
+			}
+
+			.right-col {
+				float: right;
+				width: 368px;
+				padding-left: 50px;
+
+				.form-control {
+					margin-bottom: 25px;
+				}
+
+				.or {
+					right: -10px;
+					height: 40px;
+					line-height: 40px;
+					display: inline-block;
+					position: relative;
+				}
+			}
+		}
+
+		.copyright {
+			height: 56px;
+			line-height: 35px;
+			padding: 10px 65px;
+			border-top: 1px solid #dcdcdc;
+			background: url("../img/404logo.png") 40px 50% no-repeat;
+		}
+	}
+}
+
 
 
