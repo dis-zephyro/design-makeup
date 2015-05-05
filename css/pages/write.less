@@ -47,9 +47,87 @@
 	border: 1px solid #bfdae5;
 	.box-shadow(0px 4px 10px 0px rgba(0, 0, 0, 0.16));
 
+	.write-header-inner {
+		background: #ebf2f5;
+	}
+
 	.write-header {
 		height: 184px;
-		background: #ebf2f5;
+		padding-top: 45px;
+		padding-left: 115px;
+		padding-right: 125px;
+		position: relative;
+
+		h2 {
+			height: 40px;
+			color: #265c80;
+			font-size: 28px;
+			line-height: 36px;
+			overflow: hidden;
+			margin-top: 0;
+			margin-bottom: 0;
+
+			a {
+				color: #265c80;
+				text-decoration: none;
+				border-bottom: 1px solid #b0c5d2;
+			}
+		}
+
+		p {
+			color: #4b4b4b;
+			font-size: 14px;
+			line-height: 24px;
+
+			a {
+				color: #2383b3;
+				text-decoration: none;
+				border-bottom: 1px dashed #b0c5d2;
+			}
+		}
+
+		.wh-date {
+			top: 45px;
+			left: 0;
+			width: 90px;
+			height: 98px;
+			font-weight: 300;
+			position: absolute;
+			font-family: @font-roboto;
+			background: url("../img/sprites/write-calendar-blue.png") 0 0 no-repeat;
+
+			.month {
+				color: #fff;
+				height: 29px;
+				font-size: 14px;
+				line-height: 32px;
+				text-align: center;
+			}
+
+			.date {
+				height: 60px;
+				color: #3d9ccc;
+				font-size: 48px;
+				line-height: 60px;
+				text-align: center;
+			}
+
+			&.red {
+				background: url("../img/sprites/write-calendar-red.png") 0 0 no-repeat;
+
+				.date {
+					color: #f3594f;
+				}
+			}
+		}
+
+		.wh-type {
+			top: 40px;
+			right: 0;
+			width: 49px;
+			height: 43px;
+			position: absolute;
+		}
 	}
 
 	.write-footer {
@@ -71,6 +149,306 @@
 	}
 
 	.write-body {
+		padding-top: 44px;
 		height: 440px;
+
+		.step-title {
+			height: 25px;
+			line-height: 25px;
+			margin-bottom: 42px;
+			background: url("../img/sprites/write-step-bg-inactive.png") right center repeat-x;
+
+			.step-name {
+				height: 25px;
+				color: #b2b2b2;
+				font-size: 16px;
+				background: #fff;
+				line-height: 25px;
+				padding-right: 10px;
+				display: inline-block;
+
+				.num {
+					color: #fff;
+					width: 25px;
+					height: 25px;
+					margin-right: 5px;
+					text-align: center;
+					display: inline-block;
+					background: url("../img/sprites/write-step-num.png") 0 0 no-repeat;
+				}
+			}
+
+			&.active {
+				background: url("../img/sprites/write-step-bg-active.png") right center repeat-x;
+
+				.step-name {
+					color: #3d9ccc;
+
+					.num {
+						background: url("../img/sprites/write-step-num.png") 0 -25px no-repeat;
+					}
+				}
+			}
+		}
+
+		.write-empty {
+			height: 64px;
+		}
+
+		.form-group {
+			width: 320px;
+			margin-bottom: 16px;
+		}
+
+		.btn-pay {
+			padding: 0;
+			width: 100%;
+			height: 80px;
+			display: block;
+			color: #999999;
+			text-align: left;
+			overflow: hidden;
+			background: #fafafa;
+			border: 1px solid #e6e6e6;
+			.border-radius(5px);
+
+			input[type="radio"] {
+				position: absolute;
+				clip: rect(0, 0, 0, 0);
+				pointer-events: none;
+			}
+
+			.pay-type {
+				width: 71px;
+				height: 100%;
+				float: left;
+				display: block;
+				border-right: 1px solid #e6e6e6;
+
+				span {
+					border-bottom: 1px solid #e6e6e6;
+				}
+
+				.visa {
+					width: 100%;
+					height: 50%;
+					display: block;
+					background: url("../img/sprites/icon-visa-gray.png") center no-repeat;
+				}
+
+				.mc {
+					width: 100%;
+					height: 50%;
+					display: block;
+					border-bottom: none;
+					background: url("../img/sprites/icon-mc-gray.png") center no-repeat;
+				}
+
+				.yam {
+					width: 100%;
+					height: 33.33%;
+					display: block;
+					background: url("../img/sprites/icon-yad-gray.png") center no-repeat;
+				}
+
+				.paypal {
+					width: 100%;
+					height: 33.33%;
+					display: block;
+					background: url("../img/sprites/icon-paypal-gray.png") center no-repeat;
+				}
+
+				.webmoney {
+					width: 100%;
+					height: 33.33%;
+					display: block;
+					border-bottom: none;
+					background: url("../img/sprites/icon-wm-gray.png") center no-repeat;
+				}
+
+				.bill {
+					width: 100%;
+					height: 100%;
+					display: block;
+					border-bottom: none;
+					background: url("../img/sprites/icon-account-gray.png") center no-repeat;
+				}
+			}
+
+			.pay-name {
+				display: inline-block;
+				line-height: 78px;
+				padding-left: 33px;
+			}
+
+			&:hover,
+			&.active {
+				color: #3d9ccc;
+				border-color: #3d9ccc;
+				.box-shadow(0px 0px 6px 0px rgba(61, 156, 204, 1));
+
+				.pay-type {
+					border-right-color: #98cae3;
+
+					span {
+						border-bottom-color: #98cae3;
+					}
+
+					.visa {
+						background: url("../img/sprites/icon-visa-color.png") center no-repeat;
+					}
+
+					.mc {
+						background: url("../img/sprites/icon-mc-color.png") center no-repeat;
+					}
+
+					.yam {
+						background: url("../img/sprites/icon-yad-color.png") center no-repeat;
+					}
+
+					.paypal {
+						background: url("../img/sprites/icon-paypal-color.png") center no-repeat;
+					}
+
+					.webmoney {
+						background: url("../img/sprites/icon-wm-color.png") center no-repeat;
+					}
+
+					.bill {
+						background: url("../img/sprites/icon-account-color.png") center no-repeat;
+					}
+				}
+			}
+		}
+
+		.action {
+			width: 320px;
+			height: 80px;
+			overflow: hidden;
+			background: #fff;
+			.border-radius(5px);
+
+			border: 1px solid #ffb9ab;
+
+			.discount {
+				color: #fff;
+				float: left;
+				width: 96px;
+				height: 100%;
+				font-size: 18px;
+				font-weight: 300;
+				line-height: 20px;
+				padding-top: 10px;
+				text-align: center;
+				background: #f3594f;
+				font-family: @font-roboto;
+
+				span {
+					font-size: 32px;
+					display: block;
+					line-height: 40px;
+					font-weight: 700;
+				}
+			}
+
+			.action-price-block {
+				float: left;
+				width: 222px;
+				height: 100%;
+				color: #999999;
+				padding: 10px 30px;
+
+				.action-price {
+					height: 20px;
+					color: #4b4b4b;
+					font-size: 18px;
+					line-height: 20px;
+					font-weight: 300;
+					display: inline-block;
+					font-family: @font-roboto;
+				}
+
+				.action-price-old {
+					height: 20px;
+					font-size: 13px;
+					font-weight: 300;
+					line-height: 20px;
+					position: relative;
+					margin-bottom: 5px;
+					display: inline-block;
+					font-family: @font-roboto;
+
+					i {
+						top: -4px;
+						left: 0;
+						width: 100%;
+						height: 16px;
+						position: absolute;
+						border-bottom: 1px solid #f3594f;
+						-webkit-transform: rotate(-9deg);
+						-moz-transform: rotate(-9deg);
+						-o-transform: rotate(-9deg);
+						transform: rotate(-9deg);
+					}
+				}
+
+				.action-price-text {
+					font-size: 12px;
+					text-align: center;
+				}
+			}
+		}
+
+		.payment {
+			height: 128px;
+			color: #999999;
+			font-size: 12px;
+			background: #faf4e1;
+			.border-radius(5px);
+			padding-top: 40px;
+			padding-left: 30px;
+			position: relative;
+			margin-bottom: 24px;
+			line-height: 1;
+			border: 1px solid #e1dbca;
+
+			span {
+				display: block;
+				color: #4b4b4b;
+				font-size: 28px;
+				font-weight: 700;
+				font-family: @font-roboto;
+			}
+
+			.btn-payment {
+				top: 40px;
+				right: -17px;
+				width: 148px;
+				height: 48px;
+				display: block;
+				position: absolute;
+				padding: 10px 24px;
+				line-height: 28px;
+				font-size: 24px;
+				font-weight: 700;
+				color: #fff;
+				font-family: @font-roboto;
+				background: url("../img/sprites/btn-green-bg.png") 0 0 no-repeat;
+
+				&:hover {
+					background: url("../img/sprites/btn-green-bg.png") 0 -50px no-repeat;
+				}
+			}
+		}
+
+		.checkbox {
+			font-size: 12px;
+			color: #999999;
+
+			a {
+				color: #999999;
+				text-decoration: underline;
+			}
+		}
 	}
 }
