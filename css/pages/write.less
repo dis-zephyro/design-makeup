@@ -451,4 +451,72 @@
 			}
 		}
 	}
+
+	.write-tabs-inner {
+		position: relative;
+
+		.write-tabs-container {
+			width: 200px;
+			z-index: 999;
+			top: 68px;
+			left: 2px;
+			position: absolute;
+
+		}
+
+		.write-tabs {
+			margin: 0;
+			padding: 0;
+			width: 192px;
+			height: 40px;
+			list-style: none;
+			background: url("../img/sprites/bg-write-tabs.png") 0 0 no-repeat;
+
+			li {
+				float: left;
+				width: 96px;
+				height: 40px;
+				position: relative;
+				display: inline-block;
+				background: transparent;
+				border: 1px solid transparent;
+				.border-radius(5px);
+
+				a {
+					width: 100%;
+					height: 100%;
+					color: #b2b2b2;
+					line-height: 40px;
+					text-align: center;
+					text-decoration: none;
+					display: inline-block;
+				}
+
+				&.active {
+					background: #fff;
+					border-color: #68b2d7;
+
+					a {
+						color: #3d9ccc;
+					}
+
+					&:before {
+						content: '';
+						display: block;
+						position: absolute;
+						z-index: 1010;
+						left: 50%;
+						margin-left: -10px;
+						bottom: -9px;
+						width: 21px;
+						height: 9px;
+						border-left: none;
+						border-right: none;
+						border-bottom: none;
+						background: url("../img/sprites/write-tab-arrow.png") 0 0 no-repeat;
+					}
+				}
+			}
+		}
+	}
 }

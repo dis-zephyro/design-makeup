@@ -39,103 +39,123 @@
         </div>
         <div class="write-body">
             <div class="container-write clearfix">
-                <ul class="nav nav-tabs">
-                    <li class="active"><a href="#home" data-toggle="tab">Главная</a></li>
-                    <li><a href="#profile" data-toggle="tab">Профиль</a></li>
-                    <li><a href="#messages" data-toggle="tab">Сообщения</a></li>
-                    <li><a href="#settings" data-toggle="tab">Настройки</a></li>
-                </ul>
-                <form>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="step-title active"><span class="step-name"><span class="num">1</span>Учасник</span></div>
-                            <div class="write-empty"></div>
-                            <div class="form-group has-feedback">
-                                <input type="text" class="form-control form-color" placeholder="Ваше имя">
-                                <span class="form-control-feedback"></span>
-                            </div>
-                            <div class="form-group has-feedback">
-                                <input type="text" class="form-control form-color" placeholder="Фамилия">
-                                <span class="form-control-feedback"></span>
-                            </div>
-                            <div class="form-group has-feedback">
-                                <input type="text" class="form-control form-color" placeholder="Email@example.com">
-                                <span class="form-control-feedback"></span>
-                            </div>
-                            <div class="form-group has-feedback">
-                                <input type="text" class="form-control form-color" placeholder="+7 495 000 00 00">
-                                <span class="form-control-feedback"></span>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="step-title"><span class="step-name"><span class="num">1</span>Способ оплаты</span></div>
-                            <div class="btn-group" data-toggle="buttons">
-                                <div class="form-group">
-                                    <label class="btn btn-pay">
-                                        <input type="radio" name="options" id="option1">
+                <div class="write-tabs-inner">
+                    <div class="write-tabs-container">
+                        <ul class="write-tabs">
+                            <li class="active"><a href="#human" data-toggle="tab">человек</a></li>
+                            <li><a href="#corporation" data-toggle="tab">юр. лицо</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="human">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="step-title active"><span class="step-name"><span class="num">1</span>Учасник</span></div>
+                                    <div class="write-empty"></div>
+                                    <div class="form-group has-feedback">
+                                        <input type="text" class="form-control form-color" placeholder="Ваше имя">
+                                        <span class="form-control-feedback"></span>
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <input type="text" class="form-control form-color" placeholder="Фамилия">
+                                        <span class="form-control-feedback"></span>
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <input type="text" class="form-control form-color" placeholder="Email@example.com">
+                                        <span class="form-control-feedback"></span>
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <input type="text" class="form-control form-color" placeholder="+7 495 000 00 00">
+                                        <span class="form-control-feedback"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="step-title"><span class="step-name"><span class="num">2</span>Способ оплаты</span></div>
+                                    <div class="btn-group" data-toggle="buttons">
+                                        <div class="form-group">
+                                            <label class="btn btn-pay">
+                                                <input type="radio" name="options" id="option1">
                                         <span class="pay-type">
                                             <span class="visa"></span>
                                             <span class="mc"></span>
                                         </span>
-                                        <span class="pay-name">Оплата картой</span>
+                                                <span class="pay-name">Оплата картой</span>
 
-                                    </label>
-                                </div>
-                                <div class="form-group">
-                                    <label class="btn btn-pay">
-                                        <input type="radio" name="options" id="option2">
+                                            </label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="btn btn-pay">
+                                                <input type="radio" name="options" id="option2">
                                         <span class="pay-type">
                                             <span class="yam"></span>
                                             <span class="paypal"></span>
                                             <span class="webmoney"></span>
                                         </span>
-                                        <span class="pay-name">Платежные системы</span>
-                                    </label>
-                                </div>
-                                <div class="form-group">
-                                    <label class="btn btn-pay">
-                                        <input type="radio" name="options" id="option3">
+                                                <span class="pay-name">Платежные системы</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="btn btn-pay">
+                                                <input type="radio" name="options" id="option3">
                                         <span class="pay-type">
                                             <span class="bill"></span>
                                         </span>
-                                        <span class="pay-name">Получить счет</span>
-                                    </label>
+                                                <span class="pay-name">Получить счет</span>
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="step-title"><span class="step-name"><span class="num">1</span>Подтверждение</span></div>
-                            <div class="form-group">
-                                <div class="action">
-                                    <div class="discount">акция<span>50%</span></div>
-                                    <div class="action-price-block">
-                                        <div class="row">
-                                            <div class="col-xs-6">
-                                                <span class="action-price">24 000 Р</span>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <span class="action-price-old">48 000 Р<i></i></span>
+                                <div class="col-md-4">
+                                    <div class="step-title"><span class="step-name"><span class="num">3</span>Подтверждение</span></div>
+                                    <div class="form-group">
+                                        <div class="action">
+                                            <div class="discount">акция<span>50%</span></div>
+                                            <div class="action-price-block">
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <span class="action-price">24 000 Р</span>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <span class="action-price-old">48 000 Р<i></i></span>
+                                                    </div>
+                                                </div>
+                                                <div class="action-price-text">только учасникам вебинара<br/>до конца сегодняшнего дня</div>
                                             </div>
                                         </div>
-                                        <div class="action-price-text">только учасникам вебинара<br/>до конца сегодняшнего дня</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="payment">
+                                            к оплате<span>24 000 Р</span>
+                                            <button class="btn btn-payment" type="submit">Оплатить</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <div class="checkbox">
+                                            <input id="agree" type="checkbox" value="">
+                                            <label for="agree"><span></span>я соглашаюсь с <a href="#">условиями покупки</a></label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <div class="payment">
-                                    к оплате<span>24 000 Р</span>
-                                    <button class="btn btn-payment" type="submit">Оплатить</button>
-                                </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane" id="corporation">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <div class="step-title active"><span class="step-name"><span class="num">1</span>Учасник</span></div>
                             </div>
-                            <div class="form-group text-center">
-                                <div class="checkbox">
-                                    <input id="agree" type="checkbox" value="">
-                                    <label for="agree"><span></span>я соглашаюсь с <a href="#">условиями покупки</a></label>
-                                </div>
+                            <div class="col-xs-4">
+                                <div class="step-title"><span class="step-name"><span class="num">2</span>Способ оплаты</span></div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="step-title"><span class="step-name"><span class="num">3</span>Подтверждение</span></div>
                             </div>
                         </div>
                     </div>
-                </form>
+                </div>
+
             </div>
         </div>
         <div class="write-footer">
