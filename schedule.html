@@ -231,518 +231,1282 @@
         <!-- /.container-fluid -->
     </nav>
 </header>
-<div class="full-page">
+<div class="full-page bg-light-gray">
     <div class="content-header">
         <div class="grad-bg"></div>
         <div class="pb65"></div>
         <div class="container">
             <h1 class="text-center">Рассписание</a></h1>
             <div class="text-center">
-                <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-day">
-                        <input type="radio" name="options" id="option1"> по дням
-                    </label>
-                    <label class="btn btn-year">
-                        <input type="radio" name="options" id="option2"> на год
-                    </label>
-                </div>
+                <ul  class="btn-group">
+                    <li class="btn btn-day active"><a href="#day" data-toggle="tab">Главная</a></li>
+                    <li class="btn btn-year"><a href="#year" data-toggle="tab">Профиль</a></li>
+                </ul>
             </div>
         </div>
     </div>
     <div class="schedule">
-        <div class="events">
-            <!-- -->
-            <div class="event-item event-gray">
-                <div class="event-image">
-                    <img class="img-responsive" src="img/tmp/event1.jpg" alt="#">
+        <div class="tab-content">
+            <div class="tab-pane active" id="day">
+                <div class="events">
+                    <!-- -->
+                    <div class="event-item event-gray">
+                        <div class="event-image">
+                            <img class="img-responsive" src="img/tmp/event1.jpg" alt="#">
+                        </div>
+                        <div class="event-text">
+                            <div class="event-legend clearfix">
+                                <div class="event-calendar red">
+                                    <span class="month">июнь</span>
+                                    <span class="date">21</span>
+                                </div>
+                                <span class="days-left">Уже через 2 дня!</span>
+                                <span class="places">осталось 5 мест</span>
+                            </div>
+                            <div class="event-title">
+                                <a href="#">Тренинг-трансформация: Привлечение клиентов и Создание студии 2014</a>
+                            </div>
+                            <span class="event-author">Станислав Орехов</span>
+                        </div>
+                        <div class="event-bottom">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <span class="event-price">37 000 Р</span>
+                                    <span class="event-price-old">45 000 Р<i></i></span>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <a href="#" class="btn btn-green">Записаться</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -->
+                    <div class="event-item event-gray">
+                        <div class="event-image">
+                            <img class="img-responsive" src="img/tmp/event2.jpg" alt="#">
+                        </div>
+                        <div class="event-text">
+                            <div class="event-legend clearfix">
+                                <div class="event-calendar red">
+                                    <span class="month">июнь</span>
+                                    <span class="date">21</span>
+                                </div>
+                                <span class="days-left">Уже через 2 дня!</span>
+                                <span class="places">осталось 5 мест</span>
+                            </div>
+                            <div class="event-title">
+                                <a href="#">Мастер-класс «Вдохновение путешествиями»</a>
+                            </div>
+                            <span class="event-author">Станислав Орехов</span>
+                        </div>
+                        <div class="event-bottom">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <span class="event-price">37 000 Р</span>
+                                    <span class="event-price-old">45 000 Р<i></i></span>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <a href="#" class="btn btn-green">Записаться</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -->
+                    <div class="event-item">
+                        <div class="event-image">
+                            <img class="img-responsive" src="img/tmp/event3.jpg" alt="#">
+                        </div>
+                        <div class="event-text">
+                            <div class="event-legend clearfix">
+                                <div class="event-calendar">
+                                    <span class="month">июнь</span>
+                                    <span class="date">21</span>
+                                </div>
+                                <span class="days-left"></span>
+                                <span class="places">осталось 5 мест</span>
+                            </div>
+                            <div class="event-title">
+                                <a href="#">ТСистема: Коммерческая визуализация</a>
+                            </div>
+                            <span class="event-author">Станислав Орехов</span>
+                        </div>
+                        <div class="event-bottom">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <span class="event-price">6 000 Р</span>
+                                    <span class="event-price-old">9 000 Р<i></i></span>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <a href="#" class="btn btn-green">Записаться</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -->
+                    <div class="event-item">
+                        <div class="event-image">
+                            <img class="img-responsive" src="img/tmp/event1.jpg" alt="#">
+                        </div>
+                        <div class="event-text">
+                            <div class="event-legend clearfix">
+                                <div class="event-calendar red">
+                                    <span class="month">июнь</span>
+                                    <span class="date">21</span>
+                                </div>
+                                <span class="days-left">Уже через 2 дня!</span>
+                                <span class="places">осталось 5 мест</span>
+                            </div>
+                            <div class="event-title">
+                                <a href="#">Тренинг-трансформация: Привлечение клиентов и Создание студии 2014</a>
+                            </div>
+                            <span class="event-author">Станислав Орехов</span>
+                        </div>
+                        <div class="event-bottom">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <span class="event-price">37 000 Р</span>
+                                    <span class="event-price-old">45 000 Р<i></i></span>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <a href="#" class="btn btn-green">Записаться</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -->
+                    <div class="event-item">
+                        <div class="event-image">
+                            <img class="img-responsive" src="img/tmp/event2.jpg" alt="#">
+                        </div>
+                        <div class="event-text">
+                            <div class="event-legend clearfix">
+                                <div class="event-calendar red">
+                                    <span class="month">июнь</span>
+                                    <span class="date">21</span>
+                                </div>
+                                <span class="days-left">Уже через 2 дня!</span>
+                                <span class="places">осталось 5 мест</span>
+                            </div>
+                            <div class="event-title">
+                                <a href="#">Мастер-класс «Вдохновение путешествиями»</a>
+                            </div>
+                            <span class="event-author">Станислав Орехов</span>
+                        </div>
+                        <div class="event-bottom">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <span class="event-price">37 000 Р</span>
+                                    <span class="event-price-old">45 000 Р<i></i></span>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <a href="#" class="btn btn-green">Записаться</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -->
+                    <div class="event-item">
+                        <div class="event-image">
+                            <img class="img-responsive" src="img/tmp/event3.jpg" alt="#">
+                        </div>
+                        <div class="event-text">
+                            <div class="event-legend clearfix">
+                                <div class="event-calendar">
+                                    <span class="month">июнь</span>
+                                    <span class="date">21</span>
+                                </div>
+                                <span class="days-left"></span>
+                                <span class="places">осталось 5 мест</span>
+                            </div>
+                            <div class="event-title">
+                                <a href="#">ТСистема: Коммерческая визуализация</a>
+                            </div>
+                            <span class="event-author">Станислав Орехов</span>
+                        </div>
+                        <div class="event-bottom">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <span class="event-price">6 000 Р</span>
+                                    <span class="event-price-old">9 000 Р<i></i></span>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <a href="#" class="btn btn-green">Записаться</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -->
+                    <div class="event-item">
+                        <div class="event-image">
+                            <img class="img-responsive" src="img/tmp/event1.jpg" alt="#">
+                        </div>
+                        <div class="event-text">
+                            <div class="event-legend clearfix">
+                                <div class="event-calendar red">
+                                    <span class="month">июнь</span>
+                                    <span class="date">21</span>
+                                </div>
+                                <span class="days-left">Уже через 2 дня!</span>
+                                <span class="places">осталось 5 мест</span>
+                            </div>
+                            <div class="event-title">
+                                <a href="#">Тренинг-трансформация: Привлечение клиентов и Создание студии 2014</a>
+                            </div>
+                            <span class="event-author">Станислав Орехов</span>
+                        </div>
+                        <div class="event-bottom">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <span class="event-price">37 000 Р</span>
+                                    <span class="event-price-old">45 000 Р<i></i></span>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <a href="#" class="btn btn-green">Записаться</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -->
+                    <div class="event-item">
+                        <div class="event-image">
+                            <img class="img-responsive" src="img/tmp/event2.jpg" alt="#">
+                        </div>
+                        <div class="event-text">
+                            <div class="event-legend clearfix">
+                                <div class="event-calendar red">
+                                    <span class="month">июнь</span>
+                                    <span class="date">21</span>
+                                </div>
+                                <span class="days-left">Уже через 2 дня!</span>
+                                <span class="places">осталось 5 мест</span>
+                            </div>
+                            <div class="event-title">
+                                <a href="#">Мастер-класс «Вдохновение путешествиями»</a>
+                            </div>
+                            <span class="event-author">Станислав Орехов</span>
+                        </div>
+                        <div class="event-bottom">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <span class="event-price">37 000 Р</span>
+                                    <span class="event-price-old">45 000 Р<i></i></span>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <a href="#" class="btn btn-green">Записаться</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -->
+                    <div class="event-item">
+                        <div class="event-image">
+                            <img class="img-responsive" src="img/tmp/event3.jpg" alt="#">
+                        </div>
+                        <div class="event-text">
+                            <div class="event-legend clearfix">
+                                <div class="event-calendar">
+                                    <span class="month">июнь</span>
+                                    <span class="date">21</span>
+                                </div>
+                                <span class="days-left"></span>
+                                <span class="places">осталось 5 мест</span>
+                            </div>
+                            <div class="event-title">
+                                <a href="#">ТСистема: Коммерческая визуализация</a>
+                            </div>
+                            <span class="event-author">Станислав Орехов</span>
+                        </div>
+                        <div class="event-bottom">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <span class="event-price">6 000 Р</span>
+                                    <span class="event-price-old">9 000 Р<i></i></span>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <a href="#" class="btn btn-green">Записаться</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -->
                 </div>
-                <div class="event-text">
-                    <div class="event-legend clearfix">
-                        <div class="event-calendar red">
+                <div class="time-line">
+                    <ul class="clearfix">
+                        <li>
                             <span class="month">июнь</span>
                             <span class="date">21</span>
-                        </div>
-                        <span class="days-left">Уже через 2 дня!</span>
-                        <span class="places">осталось 5 мест</span>
-                    </div>
-                    <div class="event-title">
-                        <a href="#">Тренинг-трансформация: Привлечение клиентов и Создание студии 2014</a>
-                    </div>
-                    <span class="event-author">Станислав Орехов</span>
-                </div>
-                <div class="event-bottom">
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <span class="event-price">37 000 Р</span>
-                            <span class="event-price-old">45 000 Р<i></i></span>
-                        </div>
-                        <div class="col-xs-6 text-right">
-                            <a href="#" class="btn btn-green">Записаться</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- -->
-            <div class="event-item event-gray">
-                <div class="event-image">
-                    <img class="img-responsive" src="img/tmp/event2.jpg" alt="#">
-                </div>
-                <div class="event-text">
-                    <div class="event-legend clearfix">
-                        <div class="event-calendar red">
+                        </li>
+                        <li>
                             <span class="month">июнь</span>
-                            <span class="date">21</span>
-                        </div>
-                        <span class="days-left">Уже через 2 дня!</span>
-                        <span class="places">осталось 5 мест</span>
-                    </div>
-                    <div class="event-title">
-                        <a href="#">Мастер-класс «Вдохновение путешествиями»</a>
-                    </div>
-                    <span class="event-author">Станислав Орехов</span>
-                </div>
-                <div class="event-bottom">
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <span class="event-price">37 000 Р</span>
-                            <span class="event-price-old">45 000 Р<i></i></span>
-                        </div>
-                        <div class="col-xs-6 text-right">
-                            <a href="#" class="btn btn-green">Записаться</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- -->
-            <div class="event-item">
-                <div class="event-image">
-                    <img class="img-responsive" src="img/tmp/event3.jpg" alt="#">
-                </div>
-                <div class="event-text">
-                    <div class="event-legend clearfix">
-                        <div class="event-calendar">
+                            <span class="date">22</span>
+                        </li>
+                        <li>
                             <span class="month">июнь</span>
-                            <span class="date">21</span>
-                        </div>
-                        <span class="days-left"></span>
-                        <span class="places">осталось 5 мест</span>
-                    </div>
-                    <div class="event-title">
-                        <a href="#">ТСистема: Коммерческая визуализация</a>
-                    </div>
-                    <span class="event-author">Станислав Орехов</span>
-                </div>
-                <div class="event-bottom">
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <span class="event-price">6 000 Р</span>
-                            <span class="event-price-old">9 000 Р<i></i></span>
-                        </div>
-                        <div class="col-xs-6 text-right">
-                            <a href="#" class="btn btn-green">Записаться</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- -->
-            <div class="event-item">
-                <div class="event-image">
-                    <img class="img-responsive" src="img/tmp/event1.jpg" alt="#">
-                </div>
-                <div class="event-text">
-                    <div class="event-legend clearfix">
-                        <div class="event-calendar red">
+                            <span class="date">23</span>
+                        </li>
+                        <li>
                             <span class="month">июнь</span>
-                            <span class="date">21</span>
-                        </div>
-                        <span class="days-left">Уже через 2 дня!</span>
-                        <span class="places">осталось 5 мест</span>
-                    </div>
-                    <div class="event-title">
-                        <a href="#">Тренинг-трансформация: Привлечение клиентов и Создание студии 2014</a>
-                    </div>
-                    <span class="event-author">Станислав Орехов</span>
-                </div>
-                <div class="event-bottom">
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <span class="event-price">37 000 Р</span>
-                            <span class="event-price-old">45 000 Р<i></i></span>
-                        </div>
-                        <div class="col-xs-6 text-right">
-                            <a href="#" class="btn btn-green">Записаться</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- -->
-            <div class="event-item">
-                <div class="event-image">
-                    <img class="img-responsive" src="img/tmp/event2.jpg" alt="#">
-                </div>
-                <div class="event-text">
-                    <div class="event-legend clearfix">
-                        <div class="event-calendar red">
+                            <span class="date">24</span>
+                        </li>
+                        <li class="event-day">
                             <span class="month">июнь</span>
-                            <span class="date">21</span>
-                        </div>
-                        <span class="days-left">Уже через 2 дня!</span>
-                        <span class="places">осталось 5 мест</span>
-                    </div>
-                    <div class="event-title">
-                        <a href="#">Мастер-класс «Вдохновение путешествиями»</a>
-                    </div>
-                    <span class="event-author">Станислав Орехов</span>
-                </div>
-                <div class="event-bottom">
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <span class="event-price">37 000 Р</span>
-                            <span class="event-price-old">45 000 Р<i></i></span>
-                        </div>
-                        <div class="col-xs-6 text-right">
-                            <a href="#" class="btn btn-green">Записаться</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- -->
-            <div class="event-item">
-                <div class="event-image">
-                    <img class="img-responsive" src="img/tmp/event3.jpg" alt="#">
-                </div>
-                <div class="event-text">
-                    <div class="event-legend clearfix">
-                        <div class="event-calendar">
+                            <span class="date">25</span>
+                        </li>
+                        <li>
                             <span class="month">июнь</span>
-                            <span class="date">21</span>
-                        </div>
-                        <span class="days-left"></span>
-                        <span class="places">осталось 5 мест</span>
-                    </div>
-                    <div class="event-title">
-                        <a href="#">ТСистема: Коммерческая визуализация</a>
-                    </div>
-                    <span class="event-author">Станислав Орехов</span>
-                </div>
-                <div class="event-bottom">
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <span class="event-price">6 000 Р</span>
-                            <span class="event-price-old">9 000 Р<i></i></span>
-                        </div>
-                        <div class="col-xs-6 text-right">
-                            <a href="#" class="btn btn-green">Записаться</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- -->
-            <div class="event-item">
-                <div class="event-image">
-                    <img class="img-responsive" src="img/tmp/event1.jpg" alt="#">
-                </div>
-                <div class="event-text">
-                    <div class="event-legend clearfix">
-                        <div class="event-calendar red">
+                            <span class="date">26</span>
+                        </li>
+                        <li>
                             <span class="month">июнь</span>
-                            <span class="date">21</span>
-                        </div>
-                        <span class="days-left">Уже через 2 дня!</span>
-                        <span class="places">осталось 5 мест</span>
-                    </div>
-                    <div class="event-title">
-                        <a href="#">Тренинг-трансформация: Привлечение клиентов и Создание студии 2014</a>
-                    </div>
-                    <span class="event-author">Станислав Орехов</span>
-                </div>
-                <div class="event-bottom">
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <span class="event-price">37 000 Р</span>
-                            <span class="event-price-old">45 000 Р<i></i></span>
-                        </div>
-                        <div class="col-xs-6 text-right">
-                            <a href="#" class="btn btn-green">Записаться</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- -->
-            <div class="event-item">
-                <div class="event-image">
-                    <img class="img-responsive" src="img/tmp/event2.jpg" alt="#">
-                </div>
-                <div class="event-text">
-                    <div class="event-legend clearfix">
-                        <div class="event-calendar red">
+                            <span class="date">27</span>
+                        </li>
+                        <li class="event-day">
                             <span class="month">июнь</span>
-                            <span class="date">21</span>
-                        </div>
-                        <span class="days-left">Уже через 2 дня!</span>
-                        <span class="places">осталось 5 мест</span>
-                    </div>
-                    <div class="event-title">
-                        <a href="#">Мастер-класс «Вдохновение путешествиями»</a>
-                    </div>
-                    <span class="event-author">Станислав Орехов</span>
-                </div>
-                <div class="event-bottom">
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <span class="event-price">37 000 Р</span>
-                            <span class="event-price-old">45 000 Р<i></i></span>
-                        </div>
-                        <div class="col-xs-6 text-right">
-                            <a href="#" class="btn btn-green">Записаться</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- -->
-            <div class="event-item">
-                <div class="event-image">
-                    <img class="img-responsive" src="img/tmp/event3.jpg" alt="#">
-                </div>
-                <div class="event-text">
-                    <div class="event-legend clearfix">
-                        <div class="event-calendar">
+                            <span class="date">28</span>
+                        </li>
+                        <li>
                             <span class="month">июнь</span>
-                            <span class="date">21</span>
-                        </div>
-                        <span class="days-left"></span>
-                        <span class="places">осталось 5 мест</span>
-                    </div>
-                    <div class="event-title">
-                        <a href="#">ТСистема: Коммерческая визуализация</a>
-                    </div>
-                    <span class="event-author">Станислав Орехов</span>
-                </div>
-                <div class="event-bottom">
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <span class="event-price">6 000 Р</span>
-                            <span class="event-price-old">9 000 Р<i></i></span>
-                        </div>
-                        <div class="col-xs-6 text-right">
-                            <a href="#" class="btn btn-green">Записаться</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- -->
-        </div>
-        <div class="time-line">
-            <ul class="clearfix">
-                <li>
-                    <span class="month">июнь</span>
-                    <span class="date">21</span>
-                </li>
-                <li>
-                    <span class="month">июнь</span>
-                    <span class="date">22</span>
-                </li>
-                <li>
-                    <span class="month">июнь</span>
-                    <span class="date">23</span>
-                </li>
-                <li>
-                    <span class="month">июнь</span>
-                    <span class="date">24</span>
-                </li>
-                <li class="event-day">
-                    <span class="month">июнь</span>
-                    <span class="date">25</span>
-                </li>
-                <li>
-                    <span class="month">июнь</span>
-                    <span class="date">26</span>
-                </li>
-                <li>
-                    <span class="month">июнь</span>
-                    <span class="date">27</span>
-                </li>
-                <li class="event-day">
-                    <span class="month">июнь</span>
-                    <span class="date">28</span>
-                </li>
-                <li>
-                    <span class="month">июнь</span>
-                    <span class="date">29</span>
-                </li>
-                <li>
-                    <span class="month">июнь</span>
-                    <span class="date">30</span>
-                </li>
+                            <span class="date">29</span>
+                        </li>
+                        <li>
+                            <span class="month">июнь</span>
+                            <span class="date">30</span>
+                        </li>
 
 
-                <li>
-                    <span class="month">июль</span>
-                    <span class="date">1</span>
-                </li>
-                <li>
-                    <span class="month">июль</span>
-                    <span class="date">2</span>
-                </li>
-                <li>
-                    <span class="month">июль</span>
-                    <span class="date">3</span>
-                </li>
-                <li>
-                    <span class="month">июль</span>
-                    <span class="date">4</span>
-                </li>
-                <li class="event-day">
-                    <span class="month">июль</span>
-                    <span class="date">5</span>
-                </li>
-                <li>
-                    <span class="month">июль</span>
-                    <span class="date">6</span>
-                </li>
-                <li>
-                    <span class="month">июль</span>
-                    <span class="date">7</span>
-                </li>
-                <li class="event-day">
-                    <span class="month">июль</span>
-                    <span class="date">8</span>
-                </li>
-                <li>
-                    <span class="month">июль</span>
-                    <span class="date">9</span>
-                </li>
-                <li>
-                    <span class="month">июль</span>
-                    <span class="date">10</span>
-                </li>
-                <li class="event-day">
-                    <span class="month">июль</span>
-                    <span class="date">11</span>
-                </li>
-                <li>
-                    <span class="month">июль</span>
-                    <span class="date">12</span>
-                </li>
-                <li>
-                    <span class="month">июль</span>
-                    <span class="date">13</span>
-                </li>
-                <li>
-                    <span class="month">июль</span>
-                    <span class="date">14</span>
-                </li>
-                <li>
-                    <span class="month">июль</span>
-                    <span class="date">15</span>
-                </li>
-                <li>
-                    <span class="month">июль</span>
-                    <span class="date">16</span>
-                </li>
-                <li>
-                    <span class="month">июль</span>
-                    <span class="date">17</span>
-                </li>
-                <li class="event-day">
-                    <span class="month">июль</span>
-                    <span class="date">18</span>
-                </li>
-                <li>
-                    <span class="month">июль</span>
-                    <span class="date">19</span>
-                </li>
-                <li>
-                    <span class="month">июль</span>
-                    <span class="date">20</span>
-                </li>
-                <li>
-                    <span class="month">июль</span>
-                    <span class="date">21</span>
-                </li>
-                <li class="event-day">
-                    <span class="month">июль</span>
-                    <span class="date">22</span>
-                </li>
-                <li>
-                    <span class="month">июль</span>
-                    <span class="date">23</span>
-                </li>
-                <li>
-                    <span class="month">июль</span>
-                    <span class="date">24</span>
-                </li>
-                <li>
-                    <span class="month">июль</span>
-                    <span class="date">25</span>
-                </li>
-                <li>
-                    <span class="month">июль</span>
-                    <span class="date">26</span>
-                </li>
-                <li>
-                    <span class="month">июль</span>
-                    <span class="date">27</span>
-                </li>
-                <li>
-                    <span class="month">июль</span>
-                    <span class="date">28</span>
-                </li>
-                <li>
-                    <span class="month">июль</span>
-                    <span class="date">29</span>
-                </li>
-                <li>
-                    <span class="month">июль</span>
-                    <span class="date">30</span>
-                </li>
-                <li>
-                    <span class="month">июль</span>
-                    <span class="date">31</span>
-                </li>
+                        <li>
+                            <span class="month">июль</span>
+                            <span class="date">1</span>
+                        </li>
+                        <li>
+                            <span class="month">июль</span>
+                            <span class="date">2</span>
+                        </li>
+                        <li>
+                            <span class="month">июль</span>
+                            <span class="date">3</span>
+                        </li>
+                        <li>
+                            <span class="month">июль</span>
+                            <span class="date">4</span>
+                        </li>
+                        <li class="event-day">
+                            <span class="month">июль</span>
+                            <span class="date">5</span>
+                        </li>
+                        <li>
+                            <span class="month">июль</span>
+                            <span class="date">6</span>
+                        </li>
+                        <li>
+                            <span class="month">июль</span>
+                            <span class="date">7</span>
+                        </li>
+                        <li class="event-day">
+                            <span class="month">июль</span>
+                            <span class="date">8</span>
+                        </li>
+                        <li>
+                            <span class="month">июль</span>
+                            <span class="date">9</span>
+                        </li>
+                        <li>
+                            <span class="month">июль</span>
+                            <span class="date">10</span>
+                        </li>
+                        <li class="event-day">
+                            <span class="month">июль</span>
+                            <span class="date">11</span>
+                        </li>
+                        <li>
+                            <span class="month">июль</span>
+                            <span class="date">12</span>
+                        </li>
+                        <li>
+                            <span class="month">июль</span>
+                            <span class="date">13</span>
+                        </li>
+                        <li>
+                            <span class="month">июль</span>
+                            <span class="date">14</span>
+                        </li>
+                        <li>
+                            <span class="month">июль</span>
+                            <span class="date">15</span>
+                        </li>
+                        <li>
+                            <span class="month">июль</span>
+                            <span class="date">16</span>
+                        </li>
+                        <li>
+                            <span class="month">июль</span>
+                            <span class="date">17</span>
+                        </li>
+                        <li class="event-day">
+                            <span class="month">июль</span>
+                            <span class="date">18</span>
+                        </li>
+                        <li>
+                            <span class="month">июль</span>
+                            <span class="date">19</span>
+                        </li>
+                        <li>
+                            <span class="month">июль</span>
+                            <span class="date">20</span>
+                        </li>
+                        <li>
+                            <span class="month">июль</span>
+                            <span class="date">21</span>
+                        </li>
+                        <li class="event-day">
+                            <span class="month">июль</span>
+                            <span class="date">22</span>
+                        </li>
+                        <li>
+                            <span class="month">июль</span>
+                            <span class="date">23</span>
+                        </li>
+                        <li>
+                            <span class="month">июль</span>
+                            <span class="date">24</span>
+                        </li>
+                        <li>
+                            <span class="month">июль</span>
+                            <span class="date">25</span>
+                        </li>
+                        <li>
+                            <span class="month">июль</span>
+                            <span class="date">26</span>
+                        </li>
+                        <li>
+                            <span class="month">июль</span>
+                            <span class="date">27</span>
+                        </li>
+                        <li>
+                            <span class="month">июль</span>
+                            <span class="date">28</span>
+                        </li>
+                        <li>
+                            <span class="month">июль</span>
+                            <span class="date">29</span>
+                        </li>
+                        <li>
+                            <span class="month">июль</span>
+                            <span class="date">30</span>
+                        </li>
+                        <li>
+                            <span class="month">июль</span>
+                            <span class="date">31</span>
+                        </li>
 
 
-                <li class="event-day">
-                    <span class="month">авг</span>
-                    <span class="date">1</span>
-                </li>
-                <li>
-                    <span class="month">авг</span>
-                    <span class="date">2</span>
-                </li>
-                <li>
-                    <span class="month">авг</span>
-                    <span class="date">3</span>
-                </li>
-                <li>
-                    <span class="month">авг</span>
-                    <span class="date">4</span>
-                </li>
-                <li class="event-day">
-                    <span class="month">авг</span>
-                    <span class="date">5</span>
-                </li>
-                <li>
-                    <span class="month">авг</span>
-                    <span class="date">6</span>
-                </li>
-                <li>
-                    <span class="month">авг</span>
-                    <span class="date">7</span>
-                </li>
-                <li class="event-day">
-                    <span class="month">авг</span>
-                    <span class="date">8</span>
-                </li>
-                <li>
-                    <span class="month">авг</span>
-                    <span class="date">9</span>
-                </li>
-                <li>
-                    <span class="month">авг</span>
-                    <span class="date">10</span>
-                </li>
-            </ul>
+                        <li class="event-day">
+                            <span class="month">авг</span>
+                            <span class="date">1</span>
+                        </li>
+                        <li>
+                            <span class="month">авг</span>
+                            <span class="date">2</span>
+                        </li>
+                        <li>
+                            <span class="month">авг</span>
+                            <span class="date">3</span>
+                        </li>
+                        <li>
+                            <span class="month">авг</span>
+                            <span class="date">4</span>
+                        </li>
+                        <li class="event-day">
+                            <span class="month">авг</span>
+                            <span class="date">5</span>
+                        </li>
+                        <li>
+                            <span class="month">авг</span>
+                            <span class="date">6</span>
+                        </li>
+                        <li>
+                            <span class="month">авг</span>
+                            <span class="date">7</span>
+                        </li>
+                        <li class="event-day">
+                            <span class="month">авг</span>
+                            <span class="date">8</span>
+                        </li>
+                        <li>
+                            <span class="month">авг</span>
+                            <span class="date">9</span>
+                        </li>
+                        <li>
+                            <span class="month">авг</span>
+                            <span class="date">10</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-pane" id="year">
+                <div class="calendar-inner">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <div class="months pass">
+                                <div class="months-name">Январь</div>
+                                <div class="months-item">
+                                    <table>
+                                        <tr>
+                                            <th><span>пн</span></th>
+                                            <th><span>вт</span></th>
+                                            <th><span>ср</span></th>
+                                            <th><span>чт</span></th>
+                                            <th><span>пт</span></th>
+                                            <th class="weekend"><span>сб</span></th>
+                                            <th class="weekend"><span>вс</span></th>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td><span></span></td>
+                                            <td><span>1</span></td>
+                                            <td><span>2</span></td>
+                                            <td><a href="#">3</a></td>
+                                            <td class="weekend"><span>4</span></td>
+                                            <td class="weekend"><span>5</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>6</span></td>
+                                            <td><span>7</span></td>
+                                            <td><a href="#">8</a></td>
+                                            <td><a href="#">9</a></td>
+                                            <td><span>10</span></td>
+                                            <td class="weekend"><span>11</span></td>
+                                            <td class="weekend"><span>12</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>13</span></td>
+                                            <td><span>14</span></td>
+                                            <td><span>15</span></td>
+                                            <td><span>16</span></td>
+                                            <td><a href="#">17</a></td>
+                                            <td class="weekend"><span>18</span></td>
+                                            <td class="weekend"><span>19</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>20</span></td>
+                                            <td><span>21</span></td>
+                                            <td><span>22</span></td>
+                                            <td><span>23</span></td>
+                                            <td><span>24</span></td>
+                                            <td class="weekend"><span>25</span></td>
+                                            <td class="weekend"><span>26</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">27</a></td>
+                                            <td><span>28</span></td>
+                                            <td><span>29</span></td>
+                                            <td><span>30</span></td>
+                                            <td><span>31</span></td>
+                                            <td class="weekend"><span></span></td>
+                                            <td class="weekend"><span></span></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="months pass">
+                                <div class="months-name">Февраль</div>
+                                <div class="months-item">
+                                    <table>
+                                        <tr>
+                                            <th><span>пн</span></th>
+                                            <th><span>вт</span></th>
+                                            <th><span>ср</span></th>
+                                            <th><span>чт</span></th>
+                                            <th><span>пт</span></th>
+                                            <th class="weekend"><span>сб</span></th>
+                                            <th class="weekend"><span>вс</span></th>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td><span></span></td>
+                                            <td><span>1</span></td>
+                                            <td><span>2</span></td>
+                                            <td><a href="#">3</a></td>
+                                            <td class="weekend"><span>4</span></td>
+                                            <td class="weekend"><span>5</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>6</span></td>
+                                            <td><span>7</span></td>
+                                            <td><a href="#">8</a></td>
+                                            <td><a href="#">9</a></td>
+                                            <td><span>10</span></td>
+                                            <td class="weekend"><span>11</span></td>
+                                            <td class="weekend"><span>12</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>13</span></td>
+                                            <td><span>14</span></td>
+                                            <td><span>15</span></td>
+                                            <td><span>16</span></td>
+                                            <td><a href="#">17</a></td>
+                                            <td class="weekend"><span>18</span></td>
+                                            <td class="weekend"><span>19</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>20</span></td>
+                                            <td><span>21</span></td>
+                                            <td><span>22</span></td>
+                                            <td><span>23</span></td>
+                                            <td><span>24</span></td>
+                                            <td class="weekend"><span>25</span></td>
+                                            <td class="weekend"><span>26</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">27</a></td>
+                                            <td><span>28</span></td>
+                                            <td><span>29</span></td>
+                                            <td><span>30</span></td>
+                                            <td><span>31</span></td>
+                                            <td class="weekend"><span></span></td>
+                                            <td class="weekend"><span></span></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="months pass">
+                                <div class="months-name">Март</div>
+                                <div class="months-item">
+                                    <table>
+                                        <tr>
+                                            <th><span>пн</span></th>
+                                            <th><span>вт</span></th>
+                                            <th><span>ср</span></th>
+                                            <th><span>чт</span></th>
+                                            <th><span>пт</span></th>
+                                            <th class="weekend"><span>сб</span></th>
+                                            <th class="weekend"><span>вс</span></th>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td><span></span></td>
+                                            <td><span>1</span></td>
+                                            <td><span>2</span></td>
+                                            <td><a href="#">3</a></td>
+                                            <td class="weekend"><span>4</span></td>
+                                            <td class="weekend"><span>5</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>6</span></td>
+                                            <td><span>7</span></td>
+                                            <td><a href="#">8</a></td>
+                                            <td><a href="#">9</a></td>
+                                            <td><span>10</span></td>
+                                            <td class="weekend"><span>11</span></td>
+                                            <td class="weekend"><span>12</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>13</span></td>
+                                            <td><span>14</span></td>
+                                            <td><span>15</span></td>
+                                            <td><span>16</span></td>
+                                            <td><a href="#">17</a></td>
+                                            <td class="weekend"><span>18</span></td>
+                                            <td class="weekend"><span>19</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>20</span></td>
+                                            <td><span>21</span></td>
+                                            <td><span>22</span></td>
+                                            <td><span>23</span></td>
+                                            <td><span>24</span></td>
+                                            <td class="weekend"><span>25</span></td>
+                                            <td class="weekend"><span>26</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">27</a></td>
+                                            <td><span>28</span></td>
+                                            <td><span>29</span></td>
+                                            <td><span>30</span></td>
+                                            <td><span>31</span></td>
+                                            <td class="weekend"><span></span></td>
+                                            <td class="weekend"><span></span></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="months pass">
+                                <div class="months-name">Апрель</div>
+                                <div class="months-item">
+                                    <table>
+                                        <tr>
+                                            <th><span>пн</span></th>
+                                            <th><span>вт</span></th>
+                                            <th><span>ср</span></th>
+                                            <th><span>чт</span></th>
+                                            <th><span>пт</span></th>
+                                            <th class="weekend"><span>сб</span></th>
+                                            <th class="weekend"><span>вс</span></th>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td><span></span></td>
+                                            <td><span>1</span></td>
+                                            <td><span>2</span></td>
+                                            <td><a href="#">3</a></td>
+                                            <td class="weekend"><span>4</span></td>
+                                            <td class="weekend"><span>5</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>6</span></td>
+                                            <td><span>7</span></td>
+                                            <td><a href="#">8</a></td>
+                                            <td><a href="#">9</a></td>
+                                            <td><span>10</span></td>
+                                            <td class="weekend"><span>11</span></td>
+                                            <td class="weekend"><span>12</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>13</span></td>
+                                            <td><span>14</span></td>
+                                            <td><span>15</span></td>
+                                            <td><span>16</span></td>
+                                            <td><a href="#">17</a></td>
+                                            <td class="weekend"><span>18</span></td>
+                                            <td class="weekend"><span>19</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>20</span></td>
+                                            <td><span>21</span></td>
+                                            <td><span>22</span></td>
+                                            <td><span>23</span></td>
+                                            <td><span>24</span></td>
+                                            <td class="weekend"><span>25</span></td>
+                                            <td class="weekend"><span>26</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">27</a></td>
+                                            <td><span>28</span></td>
+                                            <td><span>29</span></td>
+                                            <td><span>30</span></td>
+                                            <td><span>31</span></td>
+                                            <td class="weekend"><span></span></td>
+                                            <td class="weekend"><span></span></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-3">
+                            <div class="months pass">
+                                <div class="months-name">Май</div>
+                                <div class="months-item">
+                                    <table>
+                                        <tr>
+                                            <th><span>пн</span></th>
+                                            <th><span>вт</span></th>
+                                            <th><span>ср</span></th>
+                                            <th><span>чт</span></th>
+                                            <th><span>пт</span></th>
+                                            <th class="weekend"><span>сб</span></th>
+                                            <th class="weekend"><span>вс</span></th>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td><span></span></td>
+                                            <td><span>1</span></td>
+                                            <td><span>2</span></td>
+                                            <td><a href="#">3</a></td>
+                                            <td class="weekend"><span>4</span></td>
+                                            <td class="weekend"><span>5</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>6</span></td>
+                                            <td><span>7</span></td>
+                                            <td><a href="#">8</a></td>
+                                            <td><a href="#">9</a></td>
+                                            <td><span>10</span></td>
+                                            <td class="weekend"><span>11</span></td>
+                                            <td class="weekend"><span>12</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>13</span></td>
+                                            <td><span>14</span></td>
+                                            <td><span>15</span></td>
+                                            <td><span>16</span></td>
+                                            <td><a href="#">17</a></td>
+                                            <td class="weekend"><span>18</span></td>
+                                            <td class="weekend"><span>19</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>20</span></td>
+                                            <td><span>21</span></td>
+                                            <td><span>22</span></td>
+                                            <td><span>23</span></td>
+                                            <td><span>24</span></td>
+                                            <td class="weekend"><span>25</span></td>
+                                            <td class="weekend"><span>26</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">27</a></td>
+                                            <td><span>28</span></td>
+                                            <td><span>29</span></td>
+                                            <td><span>30</span></td>
+                                            <td><span>31</span></td>
+                                            <td class="weekend"><span></span></td>
+                                            <td class="weekend"><span></span></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="months current">
+                                <div class="months-name">Июнь</div>
+                                <div class="months-item">
+                                    <table>
+                                        <tr>
+                                            <th><span>пн</span></th>
+                                            <th><span>вт</span></th>
+                                            <th><span>ср</span></th>
+                                            <th><span>чт</span></th>
+                                            <th><span>пт</span></th>
+                                            <th class="weekend"><span>сб</span></th>
+                                            <th class="weekend"><span>вс</span></th>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td><span></span></td>
+                                            <td><span>1</span></td>
+                                            <td><span>2</span></td>
+                                            <td><a href="#">3</a></td>
+                                            <td class="weekend"><span>4</span></td>
+                                            <td class="weekend"><span>5</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>6</span></td>
+                                            <td><span>7</span></td>
+                                            <td><a href="#">8</a></td>
+                                            <td><a href="#">9</a></td>
+                                            <td><span>10</span></td>
+                                            <td class="weekend"><span>11</span></td>
+                                            <td class="weekend"><span>12</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>13</span></td>
+                                            <td><span>14</span></td>
+                                            <td><span>15</span></td>
+                                            <td><span>16</span></td>
+                                            <td><a href="#">17</a></td>
+                                            <td class="weekend"><span>18</span></td>
+                                            <td class="weekend"><span>19</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>20</span></td>
+                                            <td><span>21</span></td>
+                                            <td><span>22</span></td>
+                                            <td><span>23</span></td>
+                                            <td><span>24</span></td>
+                                            <td class="weekend"><span>25</span></td>
+                                            <td class="weekend"><span>26</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">27</a></td>
+                                            <td><span>28</span></td>
+                                            <td><span>29</span></td>
+                                            <td><span>30</span></td>
+                                            <td><span>31</span></td>
+                                            <td class="weekend"><span></span></td>
+                                            <td class="weekend"><span></span></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="months">
+                                <div class="months-name">Июль</div>
+                                <div class="months-item">
+                                    <table>
+                                        <tr>
+                                            <th><span>пн</span></th>
+                                            <th><span>вт</span></th>
+                                            <th><span>ср</span></th>
+                                            <th><span>чт</span></th>
+                                            <th><span>пт</span></th>
+                                            <th class="weekend"><span>сб</span></th>
+                                            <th class="weekend"><span>вс</span></th>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td><span></span></td>
+                                            <td><span>1</span></td>
+                                            <td><span>2</span></td>
+                                            <td><a href="#">3</a></td>
+                                            <td class="weekend"><span>4</span></td>
+                                            <td class="weekend"><span>5</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>6</span></td>
+                                            <td><span>7</span></td>
+                                            <td><a href="#">8</a></td>
+                                            <td><a href="#">9</a></td>
+                                            <td><span>10</span></td>
+                                            <td class="weekend"><span>11</span></td>
+                                            <td class="weekend"><span>12</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>13</span></td>
+                                            <td><span>14</span></td>
+                                            <td><span>15</span></td>
+                                            <td><span>16</span></td>
+                                            <td><a href="#">17</a></td>
+                                            <td class="weekend"><span>18</span></td>
+                                            <td class="weekend"><span>19</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>20</span></td>
+                                            <td><span>21</span></td>
+                                            <td><span>22</span></td>
+                                            <td><span>23</span></td>
+                                            <td><span>24</span></td>
+                                            <td class="weekend"><span>25</span></td>
+                                            <td class="weekend"><span>26</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">27</a></td>
+                                            <td><span>28</span></td>
+                                            <td><span>29</span></td>
+                                            <td><span>30</span></td>
+                                            <td><span>31</span></td>
+                                            <td class="weekend"><span></span></td>
+                                            <td class="weekend"><span></span></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="months">
+                                <div class="months-name">Август</div>
+                                <div class="months-item">
+                                    <table>
+                                        <tr>
+                                            <th><span>пн</span></th>
+                                            <th><span>вт</span></th>
+                                            <th><span>ср</span></th>
+                                            <th><span>чт</span></th>
+                                            <th><span>пт</span></th>
+                                            <th class="weekend"><span>сб</span></th>
+                                            <th class="weekend"><span>вс</span></th>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td><span></span></td>
+                                            <td><span>1</span></td>
+                                            <td><span>2</span></td>
+                                            <td><a href="#">3</a></td>
+                                            <td class="weekend"><span>4</span></td>
+                                            <td class="weekend"><span>5</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>6</span></td>
+                                            <td><span>7</span></td>
+                                            <td><a href="#">8</a></td>
+                                            <td><a href="#">9</a></td>
+                                            <td><span>10</span></td>
+                                            <td class="weekend"><span>11</span></td>
+                                            <td class="weekend"><span>12</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>13</span></td>
+                                            <td><span>14</span></td>
+                                            <td><span>15</span></td>
+                                            <td><span>16</span></td>
+                                            <td><a href="#">17</a></td>
+                                            <td class="weekend"><span>18</span></td>
+                                            <td class="weekend"><span>19</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>20</span></td>
+                                            <td><span>21</span></td>
+                                            <td><span>22</span></td>
+                                            <td><span>23</span></td>
+                                            <td><span>24</span></td>
+                                            <td class="weekend"><span>25</span></td>
+                                            <td class="weekend"><span>26</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">27</a></td>
+                                            <td><span>28</span></td>
+                                            <td><span>29</span></td>
+                                            <td><span>30</span></td>
+                                            <td><span>31</span></td>
+                                            <td class="weekend"><span></span></td>
+                                            <td class="weekend"><span></span></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-3">
+                            <div class="months">
+                                <div class="months-name">Сентябрь</div>
+                                <div class="months-item">
+                                    <table>
+                                        <tr>
+                                            <th><span>пн</span></th>
+                                            <th><span>вт</span></th>
+                                            <th><span>ср</span></th>
+                                            <th><span>чт</span></th>
+                                            <th><span>пт</span></th>
+                                            <th class="weekend"><span>сб</span></th>
+                                            <th class="weekend"><span>вс</span></th>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td><span></span></td>
+                                            <td><span>1</span></td>
+                                            <td><span>2</span></td>
+                                            <td><a href="#">3</a></td>
+                                            <td class="weekend"><span>4</span></td>
+                                            <td class="weekend"><span>5</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>6</span></td>
+                                            <td><span>7</span></td>
+                                            <td><a href="#">8</a></td>
+                                            <td><a href="#">9</a></td>
+                                            <td><span>10</span></td>
+                                            <td class="weekend"><span>11</span></td>
+                                            <td class="weekend"><span>12</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>13</span></td>
+                                            <td><span>14</span></td>
+                                            <td><span>15</span></td>
+                                            <td><span>16</span></td>
+                                            <td><a href="#">17</a></td>
+                                            <td class="weekend"><span>18</span></td>
+                                            <td class="weekend"><span>19</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>20</span></td>
+                                            <td><span>21</span></td>
+                                            <td><span>22</span></td>
+                                            <td><span>23</span></td>
+                                            <td><span>24</span></td>
+                                            <td class="weekend"><span>25</span></td>
+                                            <td class="weekend"><span>26</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">27</a></td>
+                                            <td><span>28</span></td>
+                                            <td><span>29</span></td>
+                                            <td><span>30</span></td>
+                                            <td><span>31</span></td>
+                                            <td class="weekend"><span></span></td>
+                                            <td class="weekend"><span></span></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="months">
+                                <div class="months-name">Октябрь</div>
+                                <div class="months-item">
+                                    <table>
+                                        <tr>
+                                            <th><span>пн</span></th>
+                                            <th><span>вт</span></th>
+                                            <th><span>ср</span></th>
+                                            <th><span>чт</span></th>
+                                            <th><span>пт</span></th>
+                                            <th class="weekend"><span>сб</span></th>
+                                            <th class="weekend"><span>вс</span></th>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td><span></span></td>
+                                            <td><span>1</span></td>
+                                            <td><span>2</span></td>
+                                            <td><a href="#">3</a></td>
+                                            <td class="weekend"><span>4</span></td>
+                                            <td class="weekend"><span>5</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>6</span></td>
+                                            <td><span>7</span></td>
+                                            <td><a href="#">8</a></td>
+                                            <td><a href="#">9</a></td>
+                                            <td><span>10</span></td>
+                                            <td class="weekend"><span>11</span></td>
+                                            <td class="weekend"><span>12</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>13</span></td>
+                                            <td><span>14</span></td>
+                                            <td><span>15</span></td>
+                                            <td><span>16</span></td>
+                                            <td><a href="#">17</a></td>
+                                            <td class="weekend"><span>18</span></td>
+                                            <td class="weekend"><span>19</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>20</span></td>
+                                            <td><span>21</span></td>
+                                            <td><span>22</span></td>
+                                            <td><span>23</span></td>
+                                            <td><span>24</span></td>
+                                            <td class="weekend"><span>25</span></td>
+                                            <td class="weekend"><span>26</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">27</a></td>
+                                            <td><span>28</span></td>
+                                            <td><span>29</span></td>
+                                            <td><span>30</span></td>
+                                            <td><span>31</span></td>
+                                            <td class="weekend"><span></span></td>
+                                            <td class="weekend"><span></span></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="months">
+                                <div class="months-name">Ноябрь</div>
+                                <div class="months-item">
+                                    <table>
+                                        <tr>
+                                            <th><span>пн</span></th>
+                                            <th><span>вт</span></th>
+                                            <th><span>ср</span></th>
+                                            <th><span>чт</span></th>
+                                            <th><span>пт</span></th>
+                                            <th class="weekend"><span>сб</span></th>
+                                            <th class="weekend"><span>вс</span></th>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td><span></span></td>
+                                            <td><span>1</span></td>
+                                            <td><span>2</span></td>
+                                            <td><a href="#">3</a></td>
+                                            <td class="weekend"><span>4</span></td>
+                                            <td class="weekend"><span>5</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>6</span></td>
+                                            <td><span>7</span></td>
+                                            <td><a href="#">8</a></td>
+                                            <td><a href="#">9</a></td>
+                                            <td><span>10</span></td>
+                                            <td class="weekend"><span>11</span></td>
+                                            <td class="weekend"><span>12</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>13</span></td>
+                                            <td><span>14</span></td>
+                                            <td><span>15</span></td>
+                                            <td><span>16</span></td>
+                                            <td><a href="#">17</a></td>
+                                            <td class="weekend"><span>18</span></td>
+                                            <td class="weekend"><span>19</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>20</span></td>
+                                            <td><span>21</span></td>
+                                            <td><span>22</span></td>
+                                            <td><span>23</span></td>
+                                            <td><span>24</span></td>
+                                            <td class="weekend"><span>25</span></td>
+                                            <td class="weekend"><span>26</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">27</a></td>
+                                            <td><span>28</span></td>
+                                            <td><span>29</span></td>
+                                            <td><span>30</span></td>
+                                            <td><span>31</span></td>
+                                            <td class="weekend"><span></span></td>
+                                            <td class="weekend"><span></span></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="months">
+                                <div class="months-name">Декабрь</div>
+                                <div class="months-item">
+                                    <table>
+                                        <tr>
+                                            <th><span>пн</span></th>
+                                            <th><span>вт</span></th>
+                                            <th><span>ср</span></th>
+                                            <th><span>чт</span></th>
+                                            <th><span>пт</span></th>
+                                            <th class="weekend"><span>сб</span></th>
+                                            <th class="weekend"><span>вс</span></th>
+                                        </tr>
+                                        <tr>
+                                            <td><span></span></td>
+                                            <td><span></span></td>
+                                            <td><span>1</span></td>
+                                            <td><span>2</span></td>
+                                            <td><a href="#">3</a></td>
+                                            <td class="weekend"><span>4</span></td>
+                                            <td class="weekend"><span>5</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>6</span></td>
+                                            <td><span>7</span></td>
+                                            <td><a href="#">8</a></td>
+                                            <td><a href="#">9</a></td>
+                                            <td><span>10</span></td>
+                                            <td class="weekend"><span>11</span></td>
+                                            <td class="weekend"><span>12</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>13</span></td>
+                                            <td><span>14</span></td>
+                                            <td><span>15</span></td>
+                                            <td><span>16</span></td>
+                                            <td><a href="#">17</a></td>
+                                            <td class="weekend"><span>18</span></td>
+                                            <td class="weekend"><span>19</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>20</span></td>
+                                            <td><span>21</span></td>
+                                            <td><span>22</span></td>
+                                            <td><span>23</span></td>
+                                            <td><span>24</span></td>
+                                            <td class="weekend"><span>25</span></td>
+                                            <td class="weekend"><span>26</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">27</a></td>
+                                            <td><span>28</span></td>
+                                            <td><span>29</span></td>
+                                            <td><span>30</span></td>
+                                            <td><span>31</span></td>
+                                            <td class="weekend"><span></span></td>
+                                            <td class="weekend"><span></span></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

@@ -158,6 +158,107 @@
 	}
 }
 
+.calendar-inner {
+	width: 980px;
+	margin: 0 auto 40px auto;
+
+	.months {
+		padding: 16px 24px;
+		overflow: hidden;
+		.border-radius(5px);
+		border: 1px solid transparent;
+		margin-bottom: 18px;
+
+		.months-name {
+			color: #4c4c4c;
+			font-size: 18px;
+			font-weight: 300;
+			line-height: 20px;
+			margin-bottom: 15px;
+			font-family: @font-roboto;
+		}
+
+		table {
+			width: 100%;
+			border: none;
+			border-collapse: collapse;
+
+			th {
+				width: 25px;
+				height: 30px;
+				padding: 1px;
+				color: #b2b2b2;
+				font-size: 14px;
+				line-height: 23px;
+				text-align: center;
+				font-weight: normal;
+
+				&.weekend {
+					color: #f58276;
+				}
+			}
+
+			td {
+				width: 25px;
+				height: 25px;
+				padding: 1px;
+				color: #4c4c4c;
+				font-size: 12px;
+				text-align: center;
+				font-weight: normal;
+				vertical-align: middle;
+
+				&.weekend {
+					color: #f3594f;
+				}
+
+				span {
+					width: 23px;
+					height: 23px;
+					line-height: 23px;
+					display: inline-block;
+
+				}
+
+				a {
+					width: 23px;
+					height: 23px;
+					color: #fff;
+					cursor: pointer;
+					line-height: 23px;
+					overflow: hidden;
+					background: #3d9ccc;
+					display: inline-block;
+					text-decoration: none;
+					.border-radius(3px);
+				}
+			}
+		}
+
+		&.current {
+			background: #fff;
+		}
+
+		&:hover {
+			border-color:  #e6e6e6;
+		}
+
+		&.pass {
+			opacity: .6;
+
+			table {
+				td {
+					a {
+						color: #4c4c4c;
+						background: transparent;
+						border: 1px solid #4c4c4c;
+					}
+				}
+			}
+		}
+	}
+}
+
 .time-line {
 	width: 100%;
 	overflow: hidden;
