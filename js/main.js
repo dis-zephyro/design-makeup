@@ -78,8 +78,22 @@ $(".event-slider").mCustomScrollbar({
     advanced:{autoExpandHorizontalScroll:true}
 });
 
+
+
 $(".news-list").mCustomScrollbar({
     theme:"light-thin"
 });
 
+$(".event-scroll").mCustomScrollbar({
+    axis:"x",
+    theme:"dark-thin",
+    autoExpandScrollbar:true,
+    advanced:{autoExpandHorizontalScroll:true}
+});
 
+/*
+$('.event-list').mouseover(function() {
+        $(this).popover('show');
+    }
+);
+*/
