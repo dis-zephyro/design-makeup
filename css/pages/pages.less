@@ -1293,5 +1293,125 @@
 	}
 }
 
+.project-list {
+	overflow: hidden;
+}
+
+.project-item {
+	float: left;
+	width: 560px;
+	height: 520px;
+	margin: 0 8px 10px 8px;
+	overflow: hidden;
+	background: #fafafa;
+	.border-radius(5px);
+	border: 1px solid #ececec;
+	.box-shadow(0px 1px 2px 0px rgba(0, 0, 0, 0.3));
+
+	.project-image {
+		height: 372px;
+		overflow: hidden;
+		position: relative;
+
+		.project-author {
+			left: 25px;
+			bottom: 12px;
+			color: #fff;
+			opacity: .5;
+			z-index: 100;
+			font-size: 12px;
+			position: absolute;
+
+			a {
+				color: #fff;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.project-text {
+		height: 80px;
+		background: #fff;
+		padding: 15px 22px;
+
+		.project-title {
+			color: #2383b3;
+			font-size: 16px;
+			font-weight: 300;
+			white-space: nowrap;
+			text-decoration: none;
+			font-family: @font-roboto;
+		}
+
+		.project-date {
+			color: #4b4b4b;
+			font-weight: 300;
+			text-decoration: none;
+			font-family: @font-roboto;
+			margin-bottom: 5px;
+		}
+
+		.project-link {
+			color: #9a9a9a;
+			font-size: 12px;
+			text-decoration: none;
+			border-bottom: 1px solid #dbdbdb;
+			padding-left: 17px;
+		}
+
+		.project-place {
+			color: #9a9a9a;
+			font-size: 12px;
+			padding-left: 17px;
+			background: url("../img/sprites/icon-place.png") left center no-repeat;
+		}
+	}
+
+	.project-bottom {
+		border-top: 1px solid #e6e6e6;
+		padding: 14px 23px 14px 23px;
+
+		.project-price {
+			height: 32px;
+			color: #4b4b4b;
+			font-size: 18px;
+			font-weight: 300;
+			line-height: 32px;
+			margin-right: 10px;
+			display: inline-block;
+			font-family: @font-roboto;
+		}
+
+		.project-price-old {
+			height: 32px;
+			color: #999999;
+			font-size: 13px;
+			font-weight: 300;
+			line-height: 32px;
+			position: relative;
+			display: inline-block;
+			font-family: @font-roboto;
+
+			i {
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 16px;
+				position: absolute;
+				border-bottom: 1px solid #f3594f;
+				-webkit-transform: rotate(-7deg);
+				-moz-transform: rotate(-7deg);
+				-o-transform: rotate(-7deg);
+				transform: rotate(-7deg);
+
+			}
+		}
+
+		.btn-light-gray {
+			padding: 4px 20px;
+		}
+	}
+}
+
 
 
