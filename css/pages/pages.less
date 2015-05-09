@@ -1412,5 +1412,103 @@
 	}
 }
 
+.press-content {
+	margin-bottom: 50px;
 
+	aside {
+		padding-top: 0;
+	}
+
+	.topic {
+		font-size: 18px;
+		font-weight: 300;
+		font-family: @font-roboto;
+
+		h1 {
+			margin: 0 0 24px 0;
+		}
+	}
+
+	.img-box {
+		margin-bottom: 15px;
+
+		img {
+			overflow: hidden;
+			.border-radius(5px);
+			margin-bottom: 10px;
+			border: 1px solid #e6e6e6;
+		}
+
+		a {
+			font-style: italic;
+			text-decoration: none;
+			border-bottom: 1px solid #bfdcea;
+		}
+	}
+}
+
+.speech {
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 70px;
+
+	.speech-author {
+		float: left;
+		width: 258px;
+		margin-left: 10px;
+
+		.speech-photo {
+			width: 192px;
+			height: 192px;
+			overflow: hidden;
+			background: #ededed;
+			.border-radius(96px);
+			margin: 0 auto 15px auto;
+		}
+
+		.speech-name {
+			font-size: 20px;
+			font-weight: 300;
+			text-align: center;
+			margin-bottom: 25px;
+			font-family: @font-roboto;
+
+			span {
+				font-size: 14px;
+				display: block;
+				font-family: arial, Helvetica, sans-serif;
+			}
+		}
+
+		.speech-contact {
+			padding: 25px 15px;
+			background: #faf6ed;
+			.border-radius(5px);
+			overflow: hidden;
+		}
+	}
+
+	.speech-text {
+		float: right;
+		width: 650px;
+		position: relative;
+		padding: 60px 70px 45px 70px;
+		font-size: 14px;
+		line-height: 24px;
+		font-style: italic;
+		.border-radius(5px);
+		border: 1px solid #e6e6e6;
+
+		:before {
+			top: 94px;
+			content: '';
+			left: -25px;
+			width: 25px;
+			height: 18px;
+			display: block;
+			position: absolute;
+			background: #ffffff url("../img/sprites-s03cff2c663.png") 0 -5263px no-repeat;
+		}
+	}
+}
 
