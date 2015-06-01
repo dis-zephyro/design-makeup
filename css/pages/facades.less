@@ -1,10 +1,37 @@
 .facades-header {
+	color: #265c80;
 	background: #eaf3f8;
 
+	h1 {
+		font-weight: 700;
+		margin-bottom: 10px;
+	}
+
+	.top-block-text {
+		font-size: 20px;
+		font-weight: 300;
+	}
+
 	.icon-bg {
-		padding: 38px 0 102px 0;
 		background-image: url("../img/sprites/icon-bg-facades.png");
 		background-position: center -73px;
+	}
+
+	.header-inner {
+		position: relative;
+		padding: 38px 0 102px 0;
+
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			z-index: 5;
+			left: 115px;
+			top: -9px;
+			width: 22px;
+			height: 9px;
+			background: url("../img/sprites/architectural-menu-active.png") 0 0 no-repeat;
+		}
 	}
 }
 
@@ -16,7 +43,7 @@
 		color: #999999;
 		.box-shadow(none);
 		font-style: italic;
-		margin-bottom: 80px;
+		margin-bottom: 40px;
 		background: transparent;
 
 		.top-block-icon {
@@ -31,7 +58,7 @@
 		.facades-img {
 			overflow: hidden;
 			.border-radius(6px);
-			.box-shadow(0px -4px 10px 0px rgba(0, 0, 0, 0.16));
+			.box-shadow(0px 4px 10px 0px rgba(0, 0, 0, 0.16));
 		}
 
 		.facades-img-bottom {
@@ -60,13 +87,14 @@
 			margin-bottom: 10px;
 
 			&.item1 {
-				background: url("../img/sprites/task1.png") left center no-repeat;
+				background: url("../img/sprites/task1.png") 0 13px no-repeat;
 			}
 			&.item2 {
-				background: url("../img/sprites/task2.png") left center no-repeat;
+				background: url("../img/sprites/task2.png") 0 13px no-repeat;
 			}
 			&.item3 {
-				background: url("../img/sprites/task3.png") left center no-repeat;
+				padding-top: 15px;
+				background: url("../img/sprites/task3.png") 0 0 no-repeat;
 			}
 		}
 	}

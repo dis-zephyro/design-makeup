@@ -34,7 +34,7 @@ $('.option-more').click(function() {
 );
 
 
-$("#scale1").slider({
+$("#scale1, #scale2, #scale3").slider({
     value:1000,
     min: 1000,
     max: 10000,

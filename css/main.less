@@ -420,9 +420,26 @@ textarea {
 	}
 
 	.icon-bg {
-		padding: 38px 0 102px 0;
+
 		background-image: url("../img/icon-bg.png");
 		background-position: center -73px;
+	}
+
+	.header-inner {
+		position: relative;
+		padding: 38px 0 102px 0;
+
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			z-index: 5;
+			left: 115px;
+			top: -9px;
+			width: 22px;
+			height: 9px;
+			background: url("../img/sprites/commercial-interiors-menu-active.png") 0 0 no-repeat;
+		}
 	}
 }
 
@@ -691,22 +708,27 @@ textarea {
 }
 
 .top-block {
-	margin: 0 0 43px 0;
+	margin: -48px 0 25px 0;
 	padding: 30px 55px 61px 55px;
 	background: #fff;
 	position: relative;
-	top: -48px;
 	text-align: center;
 	.box-shadow(0 4px 10px rgba(0, 0, 0, 0.16));
 	.border-radius(12px);
+	font-family: @font-roboto;
 
 	h2 {
 		font-size: 24px;
 		font-weight: 700;
 		line-height: 28px;
 		text-align: center;
-		margin-top: 35px;
-		margin-bottom: 7px;
+		margin-top: 15px;
+		margin-bottom: 25px;
+	}
+
+	.top-block-text {
+		font-size: 18px;
+		font-weight: 300;
 	}
 
 	.top-block-icon {
@@ -942,7 +964,7 @@ textarea {
 	position: relative;
 	margin: 30px auto 0 auto;
 	background: #fff;
-	padding: 50px 100px 40px 100px;
+	padding: 50px 100px 10px 100px;
 	border: 1px solid #e6e6e6;
 	.border-radius(5px);
 
@@ -968,7 +990,9 @@ textarea {
 
 .work-schema {
 	padding: 160px 0px 48px 96px;
-	background: #fff url("../img/work-schema.png") 100px 48px no-repeat;
+	margin-left: 5px;
+	margin-right: 5px;
+	background: #fff url("../img/work-schema.png") 105px 48px no-repeat;
 	border: 1px solid #e6e6e6;
 	.border-radius(5px);
 
@@ -1232,6 +1256,13 @@ textarea {
 			font-size: 14px;
 			font-weight: 400;
 			line-height: 32px;
+			border-bottom: 1px solid #e6e6e6;
+
+			&:hover {
+				color: #cd0a0a;
+				text-decoration: none;
+				border-bottom: 1px solid #cd0a0a;
+			}
 		}
 	}
 
@@ -1295,7 +1326,12 @@ textarea {
 
 .divider100 {
 	width: 100%;
-	height: 90px;
+	height: 80px;
+}
+
+.divider30 {
+	width: 100%;
+	height: 50px;
 }
 
 .copyright {
@@ -1356,6 +1392,9 @@ textarea {
 	padding-bottom: 65px;
 }
 
+.gray-block {
+	padding-top: 20px;
+}
 
 .gray-block:before,
 .gray-block:after {
@@ -1402,6 +1441,7 @@ h2.double-title {
 	font-size: 28px;
 	text-align: center;
 	font-weight: 700;
+	margin-bottom: 30px;
 
 	span {
 		display: block;
