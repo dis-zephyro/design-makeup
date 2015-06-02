@@ -91,9 +91,7 @@ $(".event-scroll").mCustomScrollbar({
     advanced:{autoExpandHorizontalScroll:true}
 });
 
-/*
-$('.event-list').mouseover(function() {
-        $(this).popover('show');
-    }
-);
-*/
+
+// Подсказки
+
+$('.cheaper').popover();
