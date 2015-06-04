@@ -160,7 +160,14 @@
 			}
 
 			.btn-green {
+				color: #4b4b4b;
 				padding: 4px 20px;
+				border-color: #e6e6e6;
+
+				&:hover {
+					color: #fff;
+					border-color: #42a553;
+				}
 			}
 
 			.photo-link {
@@ -192,12 +199,12 @@
 
 				.btn-green {
 					color: #fff;
-					background: #33ab47;
+					background-color: #49b85c;
+					border-color: #42a553;
 
 					&:hover {
-						color: #33ab47;
-						background: #fff;
-						border: 1px solid #49b85c;
+						color: #fff;
+						border-color: #42a553;
 					}
 				}
 			}
@@ -595,8 +602,8 @@
 				border-bottom: 1px solid #c5e0ee;
 
 				&:hover {
-					text-decoration: none;
-					border-color: transparent;
+					color: #f3594f;
+					border-color: #f3594f;
 				}
 			}
 		}
@@ -743,10 +750,32 @@
 		.border-radius(8px);
 
 		&:hover {
+			background: #fff;
 			.box-shadow(0px 4px 10px 0px rgba(0, 0, 0, 0.16));
-		}
-		.event-image {
 
+			.event-text {
+
+				.event-title {
+
+					a {
+						border-bottom: 1px solid #c6e1ef;
+					}
+				}
+			}
+
+			.event-bottom {
+
+				.btn-green {
+					color: #fff;
+					background-color: #49b85c;
+					border-color: #42a553;
+
+					&:hover {
+						color: #fff;
+						border-color: #42a553;
+					}
+				}
+			}
 		}
 
 		.event-text {
@@ -874,7 +903,14 @@
 			}
 
 			.btn-green {
+				color: #4b4b4b;
 				padding: 4px 20px;
+				border-color: #e6e6e6;
+
+				&:hover {
+					color: #fff;
+					border-color: #42a553;
+				}
 			}
 		}
 	}
@@ -1065,22 +1101,30 @@
 	ul {
 		margin: 0;
 		list-style: none;
-		padding: 0 0 0 35px;
+		padding: 0 0 0 0;
 
 		li {
-			padding-top: 5px;
+			margin-bottom: 5px;
 			position: relative;
 
 			a {
+				width: 100%;
 				color: #2383b3;
-				margin-bottom: 20px;
+				padding: 7px 15px 7px 47px;
 				display: inline-block;
 				text-decoration: underline;
+				.border-radius(5px);
+				border: 1px solid transparent;
+
+				&:hover {
+					border-color: #e6e6e6;
+					background-color: #fafafa;
+				}
 			}
 
 			.video {
-				top: 8px;
-				left: -35px;
+				top: 12px;
+				left: 15px;
 				width: 20px;
 				height: 15px;
 				position: absolute;
